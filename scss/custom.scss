@@ -1,0 +1,1284 @@
+// @import "settings";
+// @import "foundation";
+@import "settings";
+@import "../bower_components/foundation/scss/foundation";
+
+
+
+// Using the default styles
+.form-submit { @include button; }
+// a#edit-cancel { @include button; }
+#CTA .cta { @include button; }
+
+
+.pagetitle{
+  font-size: 28px;
+  font-weight: $font-weight-bold;
+}
+
+#edit-buttons {
+  #edit-buttons-previous {
+    background: lighten($body-font-color, 60%);
+    margin-right: $margin-default;
+  }
+}
+
+#admin-menu ul {
+  font-size: 9px; 
+}
+
+#admin-menu {
+  input[type="text"] {
+    height: auto;
+  }
+}
+
+#site-name {
+  margin: 0 $margin-default/2 0 0;
+  a {
+    text-indent: -9999px;
+    outline: none;
+    display: block;
+    width: 365px;
+    height: 36px;
+    background: transparent url("../logo.png") no-repeat center center;
+  }
+}
+
+#site-slogan {
+  color: $body-font-color;
+  font-size: 14px;
+}
+
+.site-logo {
+  width: auto;
+  height: auto;
+  a {
+    background-image: url("../logo.png");
+    width: 340px;
+    height: 200px;
+    display: block;
+    color: transparent;
+  }
+}
+
+.slogan {
+  border-bottom: 1px solid $primary-color;
+  margin-bottom: $margin-default;
+  #site-slogan{
+    span{
+      font-size: h2-font-size;
+      font-weight: $subheader-font-weight; 
+      margin-left: $f-dropdown-margin-left2;
+    }
+  }
+}
+.name {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+a.tabledrag-handle .handle {
+  height: 25px;
+  width: 25px;
+}
+
+table {
+  width: 100%;
+  tbody {
+    tr.even {
+      background: lighten(#9a8ba0, 25%);
+    }
+    tr.odd {
+      background: lighten(#9a8ba0, 30%);
+    }
+  }
+}
+
+body {
+  background: $primary-color;
+  font-family: $body-font-family;
+}
+
+/* User dashboard/menu area */
+#usermenu {
+  background: darken($body-bg, 5%);
+  border-bottom: 1px solid darken($body-bg, 10%);
+  font-size: 0.8em;
+  
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    
+    li {
+      display: inline;
+      line-height: 36px;
+      margin: 0;
+      padding: 0;
+
+      a {
+        padding: 0 0 0 0.8em ;
+      }
+    }
+  }
+}
+
+header {
+  color: $header-font-color;
+  margin: 0;
+  padding: 0;
+//  padding: $margin-default 0;
+  h1 {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: 900;
+    line-height: 36px;
+    margin: 0 16px 0 0;
+  }
+
+  h2 {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 0 0 0 0;
+    color: darken($body-bg, 10%);
+    font-size: 30px;
+  }
+}
+
+#logo {
+  display: block;
+  float: left;
+  margin: 0 16px 0px 0;
+}
+
+#primarymainmenu {
+ 
+  max-height: $topbar-height;
+  h1 {
+    color: $negative;
+    font-family: $body-font-family;
+  }
+  .top-bar {
+    height: 43px;
+    background: $white;
+    .top-bar-section {
+      ul#main-menu-links {
+        background: $white;
+        margin-left: -66px;
+        li {
+          a {
+            color: $fourth-color;
+            background-color: $white;
+            text-transform: uppercase; 
+            font-family: $h2_headers;
+            font-size: 30px;
+            padding-left: 15px;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .has-dropdown {
+    li {
+      border-bottom: 1px solid scale-color($primary-color, $lightness: -45%); 
+    }
+  }
+}
+
+#mission {
+  background-color: darken($primary-color, 10%);
+  background-image: url("../images/hero-image.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 30%;
+  background-size: 40%;
+  /* background-size: cover; */
+  padding: ($margin-default * 2) 0;
+  color: $negative;
+  font-size: 1.2em;
+  h1 {
+    color: $negative;
+  }
+  #CTA {
+    ul {
+      li {
+        a {
+          display: block;
+          float: left;
+          margin: 0 $margin-default 0 0;
+        }
+      }
+    }
+  }
+}
+
+#triptych {
+  font-size: 0.9em;
+  padding: $margin-default 0;
+  border-top: 1px solid darken($body-bg, 20%);
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: $h3-font-size;
+  }
+  h4 {
+    font-size: $h4-font-size;
+  }
+  .node {
+    margin-bottom: 0.3em;
+    padding: 0.3em 0;
+  }
+  p {
+    font-size: 0.9em;
+    font-family: $font-family-sans-serif;
+  } 
+}
+
+#CTA{
+  ul {
+    margin: ($margin-default) 0 0 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a {
+      display: block;
+      margin: 10px 0 0 0;
+      display: block;
+      margin: 0;
+    }
+  }
+}
+
+#tab-navigation {
+  border-top: 1px solid darken($body-bg, 10%);
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: $margin-default;
+  background: $body-bg;
+  padding: 0;
+  min-height: 29px;
+  ul.primary {
+    display: block;
+    border: none;
+    line-height: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    background: none;
+    li {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      a {
+        display: block;
+        float: left;
+        height: 26px;
+        width: auto;
+        font-size: 0.7em;
+        background-color: $body-bg;
+        border: none;
+        min-height: 26px;
+        line-height: 26px;
+        margin: 1px 0 1px 1px;
+        padding: 0 $margin-default;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      a:hover {
+        color: $negative;
+        background-color: $secondary-color;
+        border: none;
+      }
+    }
+    li.active {
+      a {
+        border: none;
+        background: $secondary-color;
+        color: $negative;
+      }
+    }
+  }
+
+  ul.secondary {
+    border-top: 1px solid darken($body-bg, 10%);
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: $margin-default;
+    min-height: 29px;
+    display: block;
+    line-height: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    background: none;
+    li {
+      border: none;
+      display: inline;
+      padding: 0;
+      margin: 0;
+      a {
+        display: block;
+        float: left;
+        height: 26px;
+        width: auto;
+        font-size: 0.7em;
+        background-color: $body-bg;
+        border: none;
+        min-height: 26px;
+        line-height: 26px;
+        margin: 1px 0 1px 1px;
+        padding: 0 $margin-default;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      a:hover {
+        color: $negative;
+        background-color: $secondary-color;
+        border: none;
+      }
+    }
+    li.active {
+      a {
+        border: none;
+        background: $secondary-color;
+        color: $negative;
+      }
+    }
+  }
+}
+
+#triptych {
+  background: darken($primary-color, 10%);
+}
+
+#the-lady-headlines{
+  font-family: $h2_headers;
+}
+
+
+#content {
+  padding: $margin-default 0;
+  margin-bottom: $margin-default * 4;
+  a.active {
+    // font-weight: bold;
+    // font-style: italic;
+    // color: $body-font-color;
+  }
+  .user-picture {
+    display: block;
+    float: left;
+    margin: 0 0.75em 0.75em 0;
+  }
+  .submitted {
+    color: $info-color;
+    font-size: 0.9em;
+    margin-bottom: $margin_default;
+  }
+  .node {
+    /*margin-bottom: $margin-default;
+    padding: 0 0 $margin-default 0;
+    border-bottom: 1px solid darken($body-bg, 10%); */
+    .links a {
+      font-style: normal;
+      font-size: 0.9em;
+    }
+    .field-name-field-image-teaser {
+      display: block;
+      float: right;
+      margin: 0 0 $margin-default $margin-default;
+    }
+    ul.links.inline {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      margin: 1em 0;
+      padding: 0;
+      li {
+        margin: 0 0.75em 0 0;
+        padding: 0;
+      }
+    }
+  }
+  
+
+
+  /* Side Bars - First and Second */
+  #sidebar-first, #sidebar-second {
+    font-size: 0.9em;
+    #CTA {
+      a.cta {
+        width: 100%;
+      }
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: $h3-font-size;
+    }
+    h4 {
+      font-size: $h4-font-size;
+    }
+    .node {
+      margin-bottom: 0.3em;
+      padding: 0.3em 0;
+    }
+  }
+}
+
+#drupalhelp {
+  font-size: 1.25rem;
+  color: $info-color;
+}
+
+#drupalhelp p {
+  font-weight: 300;
+}
+
+#polyptych {
+  font-size: 0.9em;
+  padding: $margin-default 0;
+  border-top: 1px solid darken($body-bg, 20%);
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: $h3-font-size;
+  }
+  h4 {
+    font-size: $h4-font-size;
+  }
+  .node {
+    margin-bottom: 0.3em;
+    padding: 0.3em 0;
+  }
+  p {
+    font-size: 0.9em;
+    font-family: $font-family-sans-serif;
+  } 
+}
+
+/* Subcription Form licated in the footer */
+
+footer {
+  font-size: 12px;
+  background: $charcoal;
+  border-top: 1px solid darken($body-bg, 20%);
+  padding-top: $margin-default;
+  color: $info-color;
+  .subcription-div{
+    #block-entityform-block-newsletter-subscribe{
+      h2{
+          font-size: 30px;
+          color: $white;
+          font-weight: bold;
+      }
+      .field-name-field-subscription-name{
+        float: left;
+        width: 40%;
+        margin-right: 20px;
+      }
+      .field-name-field-event-email{
+        float: left;
+        width: 40%;
+        margin-right: 20px;
+      }
+      #edit-actions{
+        margin-top: 53px;
+      }
+    }
+    .form-submit{
+      height: $topbar-button-font-size;
+      padding: 8px 15px 32px 15px;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    label{
+      color: $white;
+      font-size: 18px;
+    }
+    .pre-instructions{
+      p{
+        color: $white;
+        font-family: $font-family-sans-serif;
+        font-size: 18px;
+      }
+    }
+  }
+
+  h1 {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: 900;
+    line-height: 36px;
+    margin: 0 16px 0 0;
+  }
+
+  #footermessage {
+    p {
+      line-height: 36px;
+      margin-left: 450px;
+      color: $white;
+      font-family: $font-family-sans-serif;
+    }
+  }
+}
+
+
+/* The div that contains everything */
+.the-lady-main-div{
+
+  margin: 40px auto;
+  max-width: 1280px;
+  background: $white;
+  box-shadow: rgb(0, 0, 0) 0px 0px 30px;
+}
+
+
+/* JQuery Marquee */
+.marquee {
+  /*width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc; */
+}
+
+/* Region - Sidebar Second */
+#content{
+  .submitted{
+    display: none;
+  }
+  #sidebar-second{
+    .region-sidebar-second{
+        padding-top: 60px;
+      h2{
+        color: $good_grey;
+        font-size: 25px;
+        font-family: $h2_headers;
+        font-weight: bold
+      }
+      p{
+        font-size: 18px;
+        font-weight: $paragraph-font-weight;
+        a.get-in-touch-link{
+          color: $white;
+          font-size: 18px;
+          font-weight: bold;
+          height: 30px;
+          display: inline-block;
+          line-height: 30px;
+          padding: 5px 15px 35px 15px;
+          cursor: pointer;
+          border-radius: 0px;
+          background: url("../images/the_lady_bg.png") no-repeat;
+          background-size: 100% 40px;
+          font-family: $font-family-sans-serif;
+          &:hover{
+            color: $primary-color; 
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Site Logo and Name - has been removed*/
+.site-name-slogan{
+  .name{
+    h1{
+        font-size: $h1-font-size;
+        margin-left: $f-dropdown-margin-left;
+        margin-top: $f-dropdown-margin-top;
+      a{
+        color: $primary-color;
+        &:hover{
+        }
+      }
+    }
+  }
+}
+
+/* Top Social Links */
+.social-links {
+  ul {
+    margin-left: 150px;
+    list-style-type: none;
+    padding: 10px;
+    li {
+      display: inline;
+      padding: 5px;
+
+      a {
+        color: darken($primary-color, 25%);
+        &:hover {
+          color: darken($anchor-font-color, 10%); 
+        }
+      }
+    }
+  }
+}
+
+
+/* Footer Menu Links */
+#the-lady-footer {
+  position: relative;
+  clear: both;
+  margin-top: 1px;
+  color: rgb(68, 68, 68);
+  overflow: hidden;
+  nav.footer{
+    display: block;
+    font-size: 14px;
+    .inner {
+      max-width: 100%;
+      padding: 0 66px;
+      margin: 0 auto;
+      transition: all .3s ease-out;
+      .copy{
+        a{
+          &:hover{
+            color: $primary-color; 
+          }
+        }
+      }
+      li {
+        float: left;
+        margin: 0 15px 10px 0;
+        padding-right: 15px;
+        text-transform: uppercase;
+        font-family: 'MuseoSans_Fat';
+        border-right: 1px solid #333;
+        list-style-type: none;
+        a{
+          &:hover {
+            color: $primary-color; 
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Facebook and Twitter Footer Social Links */
+.footer-social-links {
+    .social-links{
+      ul {
+        padding-top: 12px;
+        margin-left: 185px;
+        li {
+            display: inline;
+            padding: 5px;
+          a {
+              color: darken($primary-color, 25%);
+            &:hover {
+              color: $white; 
+            }
+          }
+        }
+      }  
+    }
+  }
+
+
+/* Page Content containg - Entity Form Block, Sponsor and Event List Views */
+#pageContent {
+    h1.pagetitle{
+      display: none;
+    } 
+    .pagetitle{
+      font-size: $h1-font-size;
+      font-family: $font-family-sans-serif;
+      margin-bottom: 20px;
+    }
+    .pageContent{
+
+    /* When the node is displayed in full view mode */
+    .article-node-page{
+      h2.the-lady-headings-h2{
+        font-weight: bold;
+        padding-bottom: 5px;
+        margin-left: 24px;
+      }
+      .article-image{
+        .field-name-field-image{
+          margin-bottom: 20px;
+          margin-left: 25px;
+        }
+      }
+      .article-body{
+        .field-name-body{
+          p.article-desc-para{
+            text-align: justify;
+            font-family: $font-family-sans-serif;
+            font-size: 18px;
+            margin-left: 25px;
+          }
+        }
+      }
+      .article-comments{
+        h2.the-lady-comment-h2{
+          margin-left: 25px;
+        }
+      }
+    }
+
+
+    /* View of Events - Events Page */
+    .view-event-list{
+      text-align: center;
+      margin-left: 180px;
+      ul.large-block-grid-2{
+        .views-row{
+          width: 100%;
+          max-width: 460px;
+          padding: 0 20px 40px 0;
+          height: auto;
+          float: left;
+          .event-node-teaser{
+            border-color: $primary-color;
+            border-top: 5px solid;
+            background-color: #F8FAED;
+            padding: 30px 35px 90px;
+            font-size: 18px;
+            position: relative;
+            h2{
+              margin: 0px 0 40px;
+              font-size: 30px;
+              line-height: 5px;
+              font-weight: bold;
+              color: $primary-color;
+            }
+            .event-image{
+              .field-name-field-event-image{
+                width: 100%;
+                margin: 0 0 25px 0px;
+                display: block;
+                max-width: 420px
+              }
+            }
+            .event-body{
+              .field-name-body{
+                margin: 0 0 25px 0;
+                font-weight: lighter;
+              }
+            }
+            .event-venue{
+              .field-name-field-event-date{
+                color: $good_grey;
+              }
+              .field-name-field-venue{
+                font-weight: bold;
+                color: $good_grey;
+                padding-bottom: 10px;
+              }
+            }
+            ul.links{
+              li.addtoany{
+                display: none;
+              }
+              li.node-readmore{
+                display: inline-block;
+                line-height: 2.5rem;
+                padding: 15px 11px 0;
+                text-decoration: none;
+                float: right;
+                position: static;
+                a{
+                  background: url("../images/the_lady_bg.png") no-repeat;
+                  background-size: 100% 35px;
+                  color: $white;
+                  font-size: 26px;
+                  font-weight: bold;
+                  padding-left: 5px;
+                  padding-right: 5px;
+                  &:hover{
+                    color: $primary-color;
+                  }
+                }
+              }
+              li.comment-comments{
+                display: none;
+              }
+              li.comment-add{
+                display: none;
+              }
+            }
+            h4.the-lady-headings-h4 {
+              margin-top: 16px;
+              margin-bottom: -50px;
+              margin-left: -145px;
+            }
+          }
+        }
+      }
+    }
+
+
+
+      /* Sponsor List View */
+        .view-sponsor-list{
+          padding-top: 60px;
+          padding-right: 10px;
+          h2{
+            display: none;
+          }
+          .field-name-field-logo{
+            padding-bottom: 26px;
+            padding-top: 50px;
+            img{
+              width: 200px;
+              height: 200px;
+            }
+          }
+          .field-name-body{
+            a{
+              font-size: 10px;
+            }
+            p.sponsor-desc-details{
+              margin-left: 230px;
+              margin-top: -102px;
+              font-family: $font-family-sans-serif;
+              font-size: 18px;
+            }
+          }
+        }
+
+    /* Front Page Slideshow */
+    .view-front-page-slideshow{
+      margin-left: 130px;
+      margin-right: 100px;
+      padding-top: 5px;
+      .views-field-title{
+        position: absolute;
+        bottom: 35px;
+        right: 0px;
+        font-size: 20px;
+        text-align: center;
+        background-color: $white;
+        opacity: 0.5;
+        width: 300px;
+        margin-left: 165px;
+        font-family: $h2_headers; 
+      }
+      .active{
+        background: url("../images/page_nav_active.png") top left no-repeat;
+        .views-field-counter{
+          float: left;
+          padding: 10px 5px;
+          background: url("../images/page_nav_inactive.png") top left no-repeat;
+          width: 10px;
+        }
+      }
+      .views-content-counter{
+        display: none;
+      }
+      .views-slideshow-controls-bottom{
+        margin-left: 300px;
+      }
+    }
+
+
+    /* Latest News and Events - Frontpage Region and Block */
+    .region-latest-news-events{
+      #block-views-latest-news-events-block{
+        padding-top: 38px;
+        h2{
+          font-family: $h2_headers;
+          font-weight: bold;
+          color: $primary-color;
+          font-size: 30px;
+        }
+
+
+        /* Latest News and Events - Front Page View */
+        .view-latest-news-events{
+          .node-events{
+            .event-node-teaser{
+              h2{
+                font-size: 25px;
+                font-weight: bold;
+                font-family: $h2_headers;
+                color: $fourth-color;
+                text-align: center;
+              }
+              .event-image{
+                .field-name-field-event-image{
+                  padding-bottom: 10px;
+                  text-align: center;
+                }
+              }
+              .event-body{
+                .field-name-body{
+
+                }
+              }
+              .event-venue{
+                text-align: center;
+                .field-name-field-event-date{
+                  padding-top: 10px; 
+                  font-family: $h2_headers;
+                  font-size: 18px;
+                  padding-bottom: 10px;
+                }
+                .field-name-field-venue{
+                  font-family: $h2_headers;
+                  font-size: 20px;
+                  padding-bottom: 10px;
+                  font-weight: bold;
+                }
+                ul.links{
+                  li.addtoany{
+                    display: none;
+                  }
+                  li.node-readmore{
+                    a{
+                      font-family: $h2_headers;
+                      font-size: 20px;
+                      color: #FFFFFF;
+                      font-weight: bold;
+                      height: 30px;
+                      display: inline-block;
+                      line-height: 30px;
+                      padding: 0px 10px;
+                      cursor: pointer;
+                      border-radius: 0px;
+                      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+                      background: #58585A;
+                      &:hover{
+                        color: $primary-color;
+                      }
+                    }
+                  }
+                  li.comment-comments{
+                    display: none;
+                  }
+                  li.comment-add{
+                    display: none;
+                  }
+                }
+                h4.the-lady-headings-h4{
+                  display: none;
+                }
+              }
+              p.event-desc-para{
+                display: none;
+                font-family: $font-family-sans-serif;
+              }
+            }
+          }
+        }
+      }  
+    }
+
+
+    /* Custom Event Node Template Full Page View Mode  */
+    .event-node-page{
+        h2.the-lady-headings-h2{
+          text-align: center;
+          font-size: 45px; 
+          font-family: $h2_headers;
+          font-weight: bold;
+        }
+        h3.the-lady-headings-h3{
+          font-weight: bold;
+          margin-left: 24px;
+        }
+        h4.the-lady-headings-h4{
+          a{
+            font-weight: normal;
+          }
+          font-weight: bold;
+          margin-left: 24px;
+        }
+        .event-image{
+          .field-name-field-event-image{
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 25px;
+          }
+        }
+        .event-venue{
+          .field-name-field-event-date{
+            padding-top: 10px; 
+            padding-bottom: 10px;
+            text-align: center;
+          }
+          .field-name-field-venue{
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
+        }
+        .event-body{
+          .field-name-body{
+            p.event-desc-para{
+              text-align: justify;
+              padding: 25px;
+              font-family: $font-family-sans-serif;
+              font-size: 18px;
+            }
+          }
+        }
+        .event-comments{
+          h2.the-lady-comment-h2 {
+            margin-left: 355px;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 60px;
+          }
+          #comments{
+            margin-top: 50px;
+            h2.title{
+              display: none;
+              font-size: 30px;
+            }
+            form.comment-form{
+              label{
+                display: none;
+              }
+              .form-type-textfield{
+                display: none;
+              }
+              .form-type-textarea{
+                margin-left: 355px;
+                margin-top: -50px;
+                height: 75px;
+              }
+              .username{
+                display: none;
+              }
+              .filter-wrapper{
+                display: none;
+              }
+              div#edit-actions {
+                margin-top: 120px;
+                margin-left: 355px;
+                #edit-preview{
+                  display: none;
+                }
+                #edit-submit {
+                  font-size: 20px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }  
+        }
+    }
+
+    
+    /* Article List View - The Ladies Page */
+      .view-article-list{
+        .node-article{
+          padding-left: 60px;
+            .article-node-teaser{
+              h2{
+                font-family: $h2_headers;
+                font-weight: bold;
+                font-size: 30px;
+                padding-bottom: 10px;
+                color: $good_grey;
+              }
+              .article-image{
+                .field-name-field-image{
+                  float: right;
+                  margin-right: 60px;
+                  margin-bottom: 100px;
+                }
+              }
+              .article-body{
+                .field-name-body{
+                  p{
+                    width: 50%;
+                    color: $body-font-color;
+                    font-family: $font-family-sans-serif;
+                    font-size: 18px;
+                  }
+                }
+              }
+              .article-venue{
+                .field-name-field-article-date{
+                  margin-bottom: 10px;
+                }
+                .field-name-field-venue{
+
+                } 
+              }
+              ul.links{
+                li.node-readmore{
+                  a{
+                    font-family: $font-family-sans-serif;
+                    font-weight: bold;
+                    display: inline-block;
+                    line-height: 30px;
+                    padding: 0px 10px 0px 10px;
+                    cursor: pointer;
+                    border-radius: 0px;
+                    background: url("../images/the_lady_bg.png") no-repeat;
+                    background-size: 100% 35px;
+                    color: $white;
+                    font-size: 26px;
+                    &:hover{
+                      color: $primary-color;
+                    }
+                  }
+                }
+                li.comment-add{
+                  display: none;
+                }
+              }
+            }
+        }
+      }
+
+
+
+
+      /* Entity Form Block */
+      #block-entityform-block-get-in-touch{
+        h2{
+          display: none;
+          font-size: 30px;
+        }
+        p.feedback-instr {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        label{
+          font-size: 18px;
+        }
+        .field-name-field-name-required-{
+          float: left;
+          width: 40%;
+          margin-right: 20px;
+        }
+        .field-name-field-surname-required-{
+          float: left;
+          width: 40%;
+          margin-right: 20px;
+        }
+        .field-name-field-email-required-{
+          float: left;
+          width: 40%;
+          margin-right: 20px;
+        }
+        .field-name-field-contact-subject{
+          float: left;
+          width: 40%;
+          margin-right: 20px;
+        }
+        .field-name-field-message{
+          margin-top: 240px;
+          margin-bottom: 5px;
+        }
+        .entitytype-get_in_touch-form input[type="text"] {
+          margin-top: 5px;
+        }
+        .entitytype-get_in_touch-form input[type="submit"]{
+          background-color: $primary-color;
+          border: 1px solid #0eb2b8;
+          border-radius: 3px;
+          color: $white;
+          display: inline-block;
+          font-size: 25px;
+          font-weight: 700;
+          margin-top: 20px;
+          padding: 12px 20px;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover{
+            background-color: $fourth-color;
+            border: 1px solid $fourth-color;
+            color: $primary-color;
+          }     
+        }
+        .form-textarea-wrapper{
+          textarea{
+            width: 82%;
+            border: 1px solid #d1d1d1;
+            margin-bottom: 20px;
+            font-size: 14px;
+            height: 185px;
+          }
+        }
+      }
+      
+
+
+      /* Panels - About Page */
+      .region-content{
+        padding-top: 60px;
+        .panels-ipe-display-container{
+          #the-lady-about-page{
+            h1.the-lady-headings-h1 {
+              font-size: 25px;
+              font-family: $h2_headers;
+              font-weight: bold;
+              padding-bottom: 5px;
+              color: $good_grey;
+            }
+            p.about-para-intro{
+              text-align: justify;
+              font-family: $font-family-sans-serif;
+              font-size: 18px;
+            }
+            p.about-para-founder{
+              font-family: $font-family-sans-serif;
+              font-size: 18px;
+              a{
+                font-weight: bold;
+                &:hover{
+                  color: $primary-color;
+                }
+              }
+              img.founder-pic {
+                margin-left: 150px;
+                padding-top: 55px;
+              }
+            }
+            ul.social-links {
+                margin-left: 220px;
+                list-style-type: none;
+                padding: 0px;
+              li {
+                display: inline;
+                padding: 5px;
+                a {
+                  color: darken($primary-color, 15%);
+                  &:hover {
+                    color: darken($anchor-font-color, 10%); 
+                  }
+                }
+              }
+            }
+            h4.the-lady-headings-h4{
+              margin-left: 180px;
+              font-weight: bold;
+              a{
+                font-weight: normal;
+                &:hover{
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+      } 
+    }
+}

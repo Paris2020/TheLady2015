@@ -1,0 +1,25 @@
+﻿This is the first commit of the website.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch thelady_dev
+# Changes to be committed:
+#	modified:   config.rb
+#	modified:   scss/_settings.scss
+#	modified:   scss/app.scss
+#
+# Untracked files:
+#	css/
+#	custom.js
+#	gulpfile.js
+#	html.tpl.php
+#	images/
+#	js/custom.js
+#	logo.png
+#	node_modules/
+#	npm-debug.log
+#	package.json
+#	scss/custom.scss
+#	templates/
+#	thelady2015.info
+#
+

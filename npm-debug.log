@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json TheLadyProject@1.0.0 No repository field.
+5 verbose install where, deps [ 'c:\\wamp\\www\\thelady\\sites\\all\\themes\\custom\\thelady2015',
+5 verbose install   [ 'gulp', 'gulp-sass', 'gulp-watch' ] ]
+6 verbose install where, peers [ 'c:\\wamp\\www\\thelady\\sites\\all\\themes\\custom\\thelady2015',
+6 verbose install   [] ]
+7 info preinstall TheLadyProject@1.0.0
+8 verbose already installed skipping gulp-watch@* c:\wamp\www\thelady\sites\all\themes\custom\thelady2015
+9 verbose already installed skipping gulp@* c:\wamp\www\thelady\sites\all\themes\custom\thelady2015
+10 verbose already installed skipping gulp-sass@* c:\wamp\www\thelady\sites\all\themes\custom\thelady2015
+11 silly install resolved []
+12 info build c:\wamp\www\thelady\sites\all\themes\custom\thelady2015
+13 verbose linkStuff [ false,
+13 verbose linkStuff   false,
+13 verbose linkStuff   false,
+13 verbose linkStuff   'c:\\wamp\\www\\thelady\\sites\\all\\themes\\custom' ]
+14 info linkStuff TheLadyProject@1.0.0
+15 verbose linkBins TheLadyProject@1.0.0
+16 verbose linkMans TheLadyProject@1.0.0
+17 verbose rebuildBundles TheLadyProject@1.0.0
+18 verbose rebuildBundles [ '.bin', 'gulp', 'gulp-sass', 'gulp-watch' ]
+19 info install TheLadyProject@1.0.0
+20 info postinstall TheLadyProject@1.0.0
+21 verbose unsafe-perm in lifecycle true
+22 info TheLadyProject@1.0.0 Failed to exec postinstall script
+23 verbose stack Error: TheLadyProject@1.0.0 postinstall: `find node_modules/ -name '*.info' -type f -delete; bower install --force`
+23 verbose stack Exit status 1
+23 verbose stack     at EventEmitter.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+23 verbose stack     at EventEmitter.emit (events.js:110:17)
+23 verbose stack     at ChildProcess.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+23 verbose stack     at ChildProcess.emit (events.js:110:17)
+23 verbose stack     at maybeClose (child_process.js:1015:16)
+23 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+24 verbose pkgid TheLadyProject@1.0.0
+25 verbose cwd c:\wamp\www\thelady\sites\all\themes\custom\thelady2015
+26 error Windows_NT 6.3.9600
+27 error argv "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+28 error node v0.12.2
+29 error npm  v2.7.4
+30 error code ELIFECYCLE
+31 error TheLadyProject@1.0.0 postinstall: `find node_modules/ -name '*.info' -type f -delete; bower install --force`
+31 error Exit status 1
+32 error Failed at the TheLadyProject@1.0.0 postinstall script 'find node_modules/ -name '*.info' -type f -delete; bower install --force'.
+32 error This is most likely a problem with the TheLadyProject package,
+32 error not with npm itself.
+32 error Tell the author that this fails on your system:
+32 error     find node_modules/ -name '*.info' -type f -delete; bower install --force
+32 error You can get their info via:
+32 error     npm owner ls TheLadyProject
+32 error There is likely additional logging output above.
+33 verbose exit [ 1, true ]

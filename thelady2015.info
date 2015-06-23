@@ -1,0 +1,61 @@
+name = The Lady 2015
+description = Drupal Theme using Foundation 5
+core = 7.x
+version = 7.x-1.0
+engine = phptemplate
+screenshot = screenshot.png
+scripts[] = custom.js
+
+; Override the Foundation defaults and customize
+stylesheets[all][] = css/app.css
+stylesheets[all][] = css/custom.css
+
+; Standard Regions
+regions[usermenu] = User dashboard (menu)
+regions[header] = Header
+regions[CTA] = Call to action (CTA)
+regions[foundmenu] = Main menu
+
+; Triptych regions
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[mission] = Site Mission (legacy)
+regions[highlighted] = Highlighted
+regions[help] = Help
+
+regions[content] = Content
+regions[latest_news_events] = Latest News and Events
+
+regions[diptych_first] = Diptych first
+regions[diptych_last] = Diptych last
+
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+
+; Polyptych regions
+regions[polyptych_first] = Polyptych first
+regions[polyptych_01] = Polyptych middle first
+regions[polyptych_02] = Polyptych middle second
+; Insert more regions if required
+regions[polyptych_last] = Polyptych last
+
+; Extra footer menus
+regions[uxmenu] = UX Menus (aka "Extra Footer Menus")
+
+; Footer
+regions[footer] = Footer
+regions[footer_message] = Footer Message (Legacy Drupal $footer_message)
+regions[footer_form] = Footer form
+
+; Theme Features
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu

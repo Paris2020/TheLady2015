@@ -1,0 +1,12 @@
+{
+  "name": "TheLadyProject",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-watch": "*"
+  },
+  "scripts": {
+   "postinstall": "find node_modules/ -name '*.info' -type f -delete; bower install --force"
+ }
+}
