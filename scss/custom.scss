@@ -41,6 +41,7 @@
     display: block;
     width: 365px;
     height: 36px;
+    margin-top: 10px;
     background: transparent url("../logo.png") no-repeat center center;
   }
 }
@@ -59,6 +60,7 @@
     height: 200px;
     display: block;
     color: transparent;
+    margin-top: 10px;
   }
 }
 
@@ -503,7 +505,7 @@ footer {
     }
     .form-submit{
       height: $topbar-button-font-size;
-      padding: 8px 15px 32px 15px;
+      padding: 7px 15px 32px 15px;
       font-size: 18px;
       margin-top: 5px;
     }
@@ -564,32 +566,40 @@ footer {
     display: none;
   }
   #sidebar-second{
+    background-color: #F8FAED;
+    margin-top: 114px;
     .region-sidebar-second{
-        padding-top: 60px;
+          padding: 60px 10px 50px 10px;
       h2{
         color: $good_grey;
         font-size: 25px;
         font-family: $h2_headers;
-        font-weight: bold
+        font-weight: bold;
+        text-align: center;
+        font-family: $paragraph-font-family;
       }
-      p{
-        font-size: 18px;
-        font-weight: $paragraph-font-weight;
-        a.get-in-touch-link{
-          color: $white;
-          font-size: 18px;
-          font-weight: bold;
-          height: 30px;
-          display: inline-block;
-          line-height: 30px;
-          padding: 5px 15px 35px 15px;
-          cursor: pointer;
-          border-radius: 0px;
-          background: url("../images/the_lady_bg.png") no-repeat;
-          background-size: 100% 40px;
-          font-family: $font-family-sans-serif;
-          &:hover{
-            color: $primary-color; 
+      .content{
+        margin-bottom: 50px;
+        p{
+          font-size: 16px;
+          font-weight: $paragraph-font-weight;
+          text-align: center;
+          a.get-in-touch-link{
+            color: $white;
+            font-size: 18px;
+            font-weight: bold;
+            height: 30px;
+            display: inline-block;
+            line-height: 30px;
+            padding: 5px 15px 35px 15px;
+            cursor: pointer;
+            border-radius: 0px;
+            background-color: $primary-color;
+            background-size: 100% 40px;
+            font-family: $font-family-sans-serif;
+            &:hover{
+              color: $white; 
+            }
           }
         }
       }
@@ -708,6 +718,22 @@ footer {
     }
     .pageContent{
 
+
+      //Submission Text
+
+      .submission-text{
+         h1.the-lady-headings-h1{
+          text-align: center;
+          font-size: 60px;
+        }
+        p.subscribe-msg {
+          text-align: center;
+          font-size: 20px;
+        }
+      }
+     
+
+
     /* When the node is displayed in full view mode */
     .article-node-page{
       h2.the-lady-headings-h2{
@@ -743,6 +769,7 @@ footer {
     .view-event-list{
       text-align: center;
       margin-left: 180px;
+      margin-top: 80px;
       ul.large-block-grid-2{
         .views-row{
           width: 100%;
@@ -751,23 +778,24 @@ footer {
           height: auto;
           float: left;
           .event-node-teaser{
-            border-color: $primary-color;
+            border-color: $good_grey;
             border-top: 5px solid;
             background-color: #F8FAED;
             padding: 30px 35px 90px;
             font-size: 18px;
             position: relative;
-            h2{
-              margin: 0px 0 40px;
+            h2.the-lady-headings-h2{
+              margin: 10px 0 40px;
               font-size: 30px;
               line-height: 5px;
               font-weight: bold;
               color: $primary-color;
+              font-family: $h1_headers;
             }
             .event-image{
               .field-name-field-event-image{
                 width: 100%;
-                margin: 0 0 25px 0px;
+                margin: 0 0 28px 0px;
                 display: block;
                 max-width: 420px
               }
@@ -776,6 +804,7 @@ footer {
               .field-name-body{
                 margin: 0 0 25px 0;
                 font-weight: lighter;
+                font-family: $paragraph-font-family;
               }
             }
             .event-venue{
@@ -803,7 +832,7 @@ footer {
                   background: url("../images/the_lady_bg.png") no-repeat;
                   background-size: 100% 35px;
                   color: $white;
-                  font-size: 26px;
+                  font-size: 20px;
                   font-weight: bold;
                   padding-left: 5px;
                   padding-right: 5px;
@@ -823,6 +852,8 @@ footer {
               margin-top: 16px;
               margin-bottom: -50px;
               margin-left: -145px;
+              font-family: $paragraph-font-family;
+              color: $good_grey;
             }
           }
         }
@@ -853,7 +884,7 @@ footer {
             p.sponsor-desc-details{
               margin-left: 230px;
               margin-top: -102px;
-              font-family: $font-family-sans-serif;
+              font-family: $paragraph-font-family;
               font-size: 18px;
             }
           }
@@ -863,7 +894,7 @@ footer {
     .view-front-page-slideshow{
       margin-left: 130px;
       margin-right: 100px;
-      padding-top: 5px;
+      padding-top: 50px;
       .views-field-title{
         position: absolute;
         bottom: 35px;
@@ -911,35 +942,30 @@ footer {
           .node-events{
             .event-node-teaser{
               h2{
-                font-size: 25px;
+                font-size: 30px;
                 font-weight: bold;
-                font-family: $h2_headers;
+                font-family: $h1_headers;
                 color: $fourth-color;
                 text-align: center;
               }
               .event-image{
                 .field-name-field-event-image{
-                  padding-bottom: 10px;
+                  padding-bottom: 20px;
                   text-align: center;
-                }
-              }
-              .event-body{
-                .field-name-body{
-
                 }
               }
               .event-venue{
                 text-align: center;
                 .field-name-field-event-date{
                   padding-top: 10px; 
-                  font-family: $h2_headers;
+                  font-family: $paragraph-font-family;
                   font-size: 18px;
-                  padding-bottom: 10px;
+                  padding-bottom: 14px; 
                 }
                 .field-name-field-venue{
-                  font-family: $h2_headers;
+                  font-family: $paragraph-font-family;
                   font-size: 20px;
-                  padding-bottom: 10px;
+                  padding-bottom: 14px;
                   font-weight: bold;
                 }
                 ul.links{
@@ -952,10 +978,10 @@ footer {
                       font-size: 20px;
                       color: #FFFFFF;
                       font-weight: bold;
-                      height: 30px;
+                      height: 40px;
                       display: inline-block;
                       line-height: 30px;
-                      padding: 0px 10px;
+                      padding: 5px 10px;
                       cursor: pointer;
                       border-radius: 0px;
                       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
@@ -1085,11 +1111,12 @@ footer {
     
     /* Article List View - The Ladies Page */
       .view-article-list{
+        margin-top: 90px;
         .node-article{
           padding-left: 60px;
             .article-node-teaser{
               h2{
-                font-family: $h2_headers;
+                font-family: $h1_headers;
                 font-weight: bold;
                 font-size: 30px;
                 padding-bottom: 10px;
@@ -1107,7 +1134,7 @@ footer {
                   p{
                     width: 50%;
                     color: $body-font-color;
-                    font-family: $font-family-sans-serif;
+                    font-family: $paragraph-font-family;
                     font-size: 18px;
                   }
                 }
@@ -1123,17 +1150,17 @@ footer {
               ul.links{
                 li.node-readmore{
                   a{
-                    font-family: $font-family-sans-serif;
+                    font-family: $paragraph-font-family;
                     font-weight: bold;
                     display: inline-block;
                     line-height: 30px;
-                    padding: 0px 10px 0px 10px;
+                    padding: 6px 10px 35px 10px;
                     cursor: pointer;
                     border-radius: 0px;
                     background: url("../images/the_lady_bg.png") no-repeat;
                     background-size: 100% 35px;
                     color: $white;
-                    font-size: 26px;
+                    font-size: 20px;
                     &:hover{
                       color: $primary-color;
                     }
@@ -1152,16 +1179,22 @@ footer {
 
       /* Entity Form Block */
       #block-entityform-block-get-in-touch{
+        padding-top: 105px;
+        padding-left: 30px;
         h2{
           display: none;
           font-size: 30px;
         }
         p.feedback-instr {
-          font-size: 25px;
-          font-weight: bold;
+          font-size: 50px;
+          font-weight: 800;
+          color: $primary-color;
+          font-family: $h1_headers;
         }
         label{
           font-size: 18px;
+          font-family: $h1_headers;
+          font-weight: 800;
         }
         .field-name-field-name-required-{
           float: left;
@@ -1202,6 +1235,7 @@ footer {
           padding: 12px 20px;
           text-decoration: none;
           text-transform: uppercase;
+          font-family: $h1_headers;
           &:hover{
             background-color: $fourth-color;
             border: 1px solid $fourth-color;
@@ -1223,59 +1257,74 @@ footer {
 
       /* Panels - About Page */
       .region-content{
-        padding-top: 60px;
-        .panels-ipe-display-container{
-          #the-lady-about-page{
-            h1.the-lady-headings-h1 {
-              font-size: 25px;
-              font-family: $h2_headers;
-              font-weight: bold;
-              padding-bottom: 5px;
-              color: $good_grey;
-            }
-            p.about-para-intro{
-              text-align: justify;
-              font-family: $font-family-sans-serif;
-              font-size: 18px;
-            }
-            p.about-para-founder{
-              font-family: $font-family-sans-serif;
-              font-size: 18px;
-              a{
-                font-weight: bold;
-                &:hover{
-                  color: $primary-color;
-                }
+        
+        img#about-page-picture {
+          padding: 40px 0px 10px 10px;
+          margin-left: 90px;
+          margin-top: 68px;
+        }
+        h1.the-lady-headings-h1 {
+          margin-top: 80px;
+          margin-left: 153px;
+          font-family: $h1_headers;
+          font-weight: 800;
+          color: $primary-color;
+          font-size: 40px;
+        }
+        h1.the-founder-h1 {
+          margin-top: 80px;
+          margin-left: 108px;
+          font-family: $h1_headers;
+          font-weight: 800;
+          color: $primary-color;
+          font-size: 40px;
+        }
+        p.about-para-intro {
+          margin-left: 160px;
+          line-height: 28px;
+        }
+        p.about-para-founder {
+          margin-left: 111px;
+          line-height: 28px;
+        }
+        img.founder-pic {
+          margin-left: -42px;
+          margin-top: 80px;
+          display: inline-block;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          -o-border-radius: 100%;
+          height: 192px;
+          width: 200px;
+        }
+         
+        ul.social-links {
+          margin-left: -13px;
+          margin-top: 10px;
+          list-style-type: none;
+          padding: 0px;
+          li {
+            display: inline;
+            padding: 5px;
+            a {
+              color: darken($primary-color, 15%);
+              &:hover {
+                color: darken($anchor-font-color, 10%); 
               }
-              img.founder-pic {
-                margin-left: 150px;
-                padding-top: 55px;
-              }
             }
-            ul.social-links {
-                margin-left: 220px;
-                list-style-type: none;
-                padding: 0px;
-              li {
-                display: inline;
-                padding: 5px;
-                a {
-                  color: darken($primary-color, 15%);
-                  &:hover {
-                    color: darken($anchor-font-color, 10%); 
-                  }
-                }
-              }
-            }
-            h4.the-lady-headings-h4{
-              margin-left: 180px;
-              font-weight: bold;
-              a{
-                font-weight: normal;
-                &:hover{
-                  color: $primary-color;
-                }
-              }
+          }
+        }
+        h4.the-lady-headings-h4{
+          margin-left: -65px;
+          font-weight: 800;
+          color: $primary-color;
+          font-family: $h1_headers;
+          a{
+          font-weight: normal;
+            &:hover{
+              color: $primary-color;
             }
           }
         }

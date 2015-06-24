@@ -91,8 +91,9 @@ $margin-default: 20px;
 
 // We use these to define default font stacks
 $font-family-sans-serif: 'Open Sans Condensed', sans-serif;
-$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$allura-font-family: 'Allura', cursive;
+//$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+//$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
 $font-weight-normal: normal;
@@ -135,6 +136,7 @@ $negative: #ffffff;
 $body-bg: $white;
 $body-font-color: $jet;
 $body-font-family: $font-family-sans-serif;
+
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
 
@@ -219,6 +221,7 @@ $cursor-default-value: default;
 
 // We use these to control header font styles
 $h2_headers:'Open Sans Condensed', sans-serif;
+$h1_headers: $allura-font-family;
 //Oswald
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
@@ -231,7 +234,7 @@ $h2_headers:'Open Sans Condensed', sans-serif;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(37);
-$h2-font-size: rem-calc(35);
+$h2-font-size: rem-;
 $h3-font-size: rem-calc(25);
 $h4-font-size: rem-calc(23);
 $h5-font-size: rem-calc(18);
@@ -257,7 +260,7 @@ $subheader-font-weight: $font-weight-bold;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-$paragraph-font-family: inherit;
+$paragraph-font-family:  'Bad Script', cursive;
 $paragraph-font-weight: $font-weight-normal;
 $paragraph-font-size: 1rem;
 $paragraph-line-height: 1.6;

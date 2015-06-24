@@ -59,3 +59,7 @@ features[] = comment_user_verification
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
+
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts
+
