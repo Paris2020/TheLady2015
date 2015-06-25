@@ -7043,66 +7043,112 @@ footer {
     #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser p.event-desc-para {
       display: none;
       font-family: "Open Sans Condensed", sans-serif; }
-  #pageContent .pageContent .event-node-page h2.the-lady-headings-h2 {
-    text-align: center;
-    font-size: 45px;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: bold; }
-  #pageContent .pageContent .event-node-page h3.the-lady-headings-h3 {
-    font-weight: bold;
-    margin-left: 24px; }
-  #pageContent .pageContent .event-node-page h4.the-lady-headings-h4 {
-    font-weight: bold;
-    margin-left: 24px; }
-    #pageContent .pageContent .event-node-page h4.the-lady-headings-h4 a {
-      font-weight: normal; }
-  #pageContent .pageContent .event-node-page .event-image .field-name-field-event-image {
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 25px; }
-  #pageContent .pageContent .event-node-page .event-venue .field-name-field-event-date {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center; }
-  #pageContent .pageContent .event-node-page .event-venue .field-name-field-venue {
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 10px; }
-  #pageContent .pageContent .event-node-page .event-body .field-name-body p.event-desc-para {
-    text-align: justify;
-    padding: 25px;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 18px; }
-  #pageContent .pageContent .event-node-page .event-comments h2.the-lady-comment-h2 {
-    margin-left: 355px;
-    font-size: 30px;
-    font-weight: bold;
+  #pageContent .pageContent .event-node-page {
     margin-top: 60px; }
-  #pageContent .pageContent .event-node-page .event-comments #comments {
-    margin-top: 50px; }
-    #pageContent .pageContent .event-node-page .event-comments #comments h2.title {
-      display: none;
-      font-size: 30px; }
-    #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form label {
-      display: none; }
-    #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form .form-type-textfield {
-      display: none; }
-    #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form .form-type-textarea {
-      margin-left: 355px;
-      margin-top: -50px;
-      height: 75px; }
-    #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form .username {
-      display: none; }
-    #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form .filter-wrapper {
-      display: none; }
-    #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form div#edit-actions {
-      margin-top: 120px;
-      margin-left: 355px; }
-      #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form div#edit-actions #edit-preview {
-        display: none; }
-      #pageContent .pageContent .event-node-page .event-comments #comments form.comment-form div#edit-actions #edit-submit {
-        font-size: 20px;
-        font-weight: bold; }
+    #pageContent .pageContent .event-node-page h2.the-lady-headings-h2 {
+      text-align: center;
+      font-size: 50px;
+      font-family: "Allura", cursive;
+      font-weight: bold;
+      color: #58585a; }
+    #pageContent .pageContent .event-node-page h3.the-lady-headings-h3 {
+      font-weight: bold;
+      margin-left: 24px;
+      font-family: "Allura", cursive;
+      font-size: 25px;
+      color: #58585a; }
+    #pageContent .pageContent .event-node-page h4.the-lady-headings-h4 {
+      margin-left: 25px;
+      font-weight: 800;
+      color: #58585a;
+      font-family: "Allura", cursive; }
+      #pageContent .pageContent .event-node-page h4.the-lady-headings-h4 a {
+        font-weight: normal; }
+    #pageContent .pageContent .event-node-page .event-image .field-name-field-event-image {
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 25px; }
+    #pageContent .pageContent .event-node-page .event-venue .field-name-field-event-date {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      font-family: "Bad Script", cursive; }
+    #pageContent .pageContent .event-node-page .event-venue .field-name-field-venue {
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 10px;
+      font-family: "Bad Script", cursive; }
+    #pageContent .pageContent .event-node-page .event-body .field-name-body p.event-desc-para {
+      text-align: justify;
+      padding: 25px;
+      font-family: "Bad Script", cursive;
+      font-size: 18px;
+      margin-top: 30px; }
+    #pageContent .pageContent .event-node-page section.comment-wrapper {
+      margin-top: 60px; }
+      #pageContent .pageContent .event-node-page section.comment-wrapper .comment-list .comment-list-wrapper .left {
+        float: left; }
+        #pageContent .pageContent .event-node-page section.comment-wrapper .comment-list .comment-list-wrapper .left h2.the-lady-headings-h2 {
+          margin-left: 30px;
+          font-family: "Allura", cursive;
+          font-size: 60px;
+          color: #58585a;
+          font-weight: bold; }
+      #pageContent .pageContent .event-node-page section.comment-wrapper .comment-list .comment-list-wrapper .right {
+        float: right;
+        margin-right: 460px;
+        margin-top: 50px; }
+      #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right {
+        float: right;
+        margin-right: 240px;
+        margin-top: 50px; }
+        #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right h2.title {
+          display: none; }
+        #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right .comment-by-node-author h3 {
+          font-family: "Bad Script", cursive;
+          font-weight: 800; }
+          #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right .comment-by-node-author h3 a {
+            color: #58585a; }
+        #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right .comment-by-node-author label {
+          font-size: 22px;
+          color: #58585a; }
+        #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right .comment-by-node-author .field-name-comment-body {
+          font-size: 22px;
+          font-family: "Bad Script", cursive; }
+        #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right form.comment-form {
+          margin-top: 120px; }
+          #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right form.comment-form .form-type-textfield label {
+            font-size: 24px;
+            color: #58585a;
+            font-weight: bold;
+            font-family: "Allura", cursive; }
+          #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right form.comment-form .field-name-comment-body label {
+            color: #58585a;
+            font-size: 24px;
+            font-weight: 800;
+            font-family: "Allura", cursive; }
+          #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right form.comment-form .field-name-comment-body .form-textarea-wrapper textarea {
+            width: 600px;
+            height: 255px; }
+          #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right form.comment-form .form-actions #edit-preview {
+            display: none; }
+          #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right form.comment-form .form-actions #edit-submit {
+            background-color: #0EB2B8;
+            border: 1px solid #0EB2B8;
+            border-radius: 3px;
+            color: #FFFFFF;
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 20px;
+            padding: 12px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "Allura", cursive; }
+            #pageContent .pageContent .event-node-page section.comment-wrapper .event-comments-form .comment-form-wrapper .right form.comment-form .form-actions #edit-submit:hover {
+              background-color: #58585A;
+              border: 1px solid #58585A;
+              color: #0EB2B8; }
   #pageContent .pageContent .view-article-list {
     margin-top: 90px; }
     #pageContent .pageContent .view-article-list .node-article {
@@ -7152,7 +7198,7 @@ footer {
       color: #0EB2B8;
       font-family: "Allura", cursive; }
     #pageContent .pageContent #block-entityform-block-get-in-touch label {
-      font-size: 18px;
+      font-size: 24px;
       font-family: "Allura", cursive;
       font-weight: 800; }
     #pageContent .pageContent #block-entityform-block-get-in-touch .field-name-field-name-required- {
@@ -7246,12 +7292,12 @@ footer {
         color: #096d71; }
         #pageContent .pageContent .region-content ul.social-links li a:hover {
           color: #070707; }
-  #pageContent .pageContent .region-content h4.the-lady-headings-h4 {
-    margin-left: -65px;
+  #pageContent .pageContent .region-content h4.the-founder-heading {
+    margin-left: -60px;
     font-weight: 800;
     color: #0EB2B8;
     font-family: "Allura", cursive; }
-    #pageContent .pageContent .region-content h4.the-lady-headings-h4 a {
+    #pageContent .pageContent .region-content h4.the-founder-heading a {
       font-weight: normal; }
-      #pageContent .pageContent .region-content h4.the-lady-headings-h4 a:hover {
+      #pageContent .pageContent .region-content h4.the-founder-heading a:hover {
         color: #0EB2B8; }

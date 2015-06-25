@@ -149,7 +149,7 @@
           <section class="comment-wrapper">
             <div class="comment-list">
               <div class="comment-list-wrapper">
-                <div class="left"><h2>Comments</h2></div>
+                <div class="left"><h2 class="the-lady-headings-h2">Comments</h2></div>
                 <div class="right"></div>
               </div>
             </div>

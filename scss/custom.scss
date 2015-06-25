@@ -1015,22 +1015,29 @@ footer {
 
     /* Custom Event Node Template Full Page View Mode  */
     .event-node-page{
+        margin-top: 60px;
         h2.the-lady-headings-h2{
           text-align: center;
-          font-size: 45px; 
-          font-family: $h2_headers;
+          font-size: 50px; 
+          font-family: $h1_headers;
           font-weight: bold;
+          color: $good_grey;
         }
         h3.the-lady-headings-h3{
           font-weight: bold;
           margin-left: 24px;
+          font-family: $h1_headers;
+          font-size: 25px;
+          color: $good_grey;
         }
         h4.the-lady-headings-h4{
+          margin-left: 25px;
+          font-weight: 800;
+          color: $good_grey;
+          font-family: $h1_headers;
           a{
             font-weight: normal;
           }
-          font-weight: bold;
-          margin-left: 24px;
         }
         .event-image{
           .field-name-field-event-image{
@@ -1044,11 +1051,13 @@ footer {
             padding-top: 10px; 
             padding-bottom: 10px;
             text-align: center;
+            font-family: $paragraph-font-family;
           }
           .field-name-field-venue{
             text-align: center;
             font-weight: bold;
             padding-bottom: 10px;
+            font-family: $paragraph-font-family;
           }
         }
         .event-body{
@@ -1056,57 +1065,120 @@ footer {
             p.event-desc-para{
               text-align: justify;
               padding: 25px;
-              font-family: $font-family-sans-serif;
+              font-family: $paragraph-font-family;
               font-size: 18px;
+              margin-top: 30px;
             }
           }
         }
-        .event-comments{
-          h2.the-lady-comment-h2 {
-            margin-left: 355px;
-            font-size: 30px;
-            font-weight: bold;
-            margin-top: 60px;
-          }
-          #comments{
-            margin-top: 50px;
-            h2.title{
-              display: none;
-              font-size: 30px;
-            }
-            form.comment-form{
-              label{
-                display: none;
-              }
-              .form-type-textfield{
-                display: none;
-              }
-              .form-type-textarea{
-                margin-left: 355px;
-                margin-top: -50px;
-                height: 75px;
-              }
-              .username{
-                display: none;
-              }
-              .filter-wrapper{
-                display: none;
-              }
-              div#edit-actions {
-                margin-top: 120px;
-                margin-left: 355px;
-                #edit-preview{
-                  display: none;
-                }
-                #edit-submit {
-                  font-size: 20px;
+        section.comment-wrapper {
+          margin-top: 60px;
+          .comment-list{
+            .comment-list-wrapper{
+              .left{
+                float: left;
+                h2.the-lady-headings-h2{
+                  margin-left: 30px;
+                  font-family: $h1_headers;
+                  font-size: 60px;
+                  color: $good_grey;
                   font-weight: bold;
                 }
               }
+              .right{
+                float: right;
+                margin-right: 460px;
+                margin-top: 50px;
+              }
             }
-          }  
+          }
+          .event-comments-form{
+            //background: url("../images/bg_network.gif") center center;
+            //background-size: 100% 50px;
+            .comment-form-wrapper{
+              .right{
+                float: right;
+                margin-right: 240px;
+                margin-top: 50px;
+                h2.title {
+                  display: none;
+                }
+                .comment-by-node-author{
+                  h3{
+                    font-family: $paragraph-font-family;
+                    font-weight: 800;
+                    a{
+                      color: $good_grey;
+                    }
+                  }
+                  label{
+                    font-size: 22px;
+                    color: $good_grey;
+                  }
+                  .field-name-comment-body{
+                    font-size: 22px;
+                    font-family: $paragraph-font-family;
+                  }
+                  ul.links{
+
+                  }
+                }
+                form.comment-form{
+                  margin-top: 120px;
+                  .form-type-textfield{
+                    label{
+                      font-size: 24px;
+                      color: $good_grey;
+                      font-weight: bold;
+                      font-family: $h1_headers;
+                    }
+                  }
+                  .field-name-comment-body{
+                    label{
+                      color: $good_grey;
+                      font-size: 24px;
+                      font-weight: 800;
+                      font-family: $h1_headers;
+                    }
+                    .form-textarea-wrapper {
+                      textarea{
+                        width: 600px;
+                        height: 255px;
+                      }
+                    }
+                  }
+                  .form-actions{
+                    #edit-preview{
+                      display: none;
+                    }
+                    #edit-submit{
+                      background-color: $primary-color;
+                      border: 1px solid $primary-color;
+                      border-radius: 3px;
+                      color: $white;
+                      display: inline-block;
+                      font-size: 30px;
+                      font-weight: 700;
+                      margin-top: 20px;
+                      padding: 12px 20px;
+                      text-decoration: none;
+                      text-transform: uppercase;
+                      font-family: $h1_headers;
+                      &:hover{
+                        background-color: #58585A;
+                        border: 1px solid #58585A;
+                        color: $primary-color;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
-    }
+      }
+
+
 
     
     /* Article List View - The Ladies Page */
@@ -1192,7 +1264,7 @@ footer {
           font-family: $h1_headers;
         }
         label{
-          font-size: 18px;
+          font-size: 24px;
           font-family: $h1_headers;
           font-weight: 800;
         }
@@ -1316,8 +1388,8 @@ footer {
             }
           }
         }
-        h4.the-lady-headings-h4{
-          margin-left: -65px;
+        h4.the-founder-heading{
+          margin-left: -60px;
           font-weight: 800;
           color: $primary-color;
           font-family: $h1_headers;
