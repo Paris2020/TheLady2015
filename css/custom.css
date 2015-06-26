@@ -7245,31 +7245,32 @@ footer {
       margin-bottom: 20px;
       font-size: 14px;
       height: 185px; }
-  #pageContent .pageContent .region-content img#about-page-picture {
+  #pageContent .pageContent #the-lady-about-page img#about-page-picture {
     padding: 40px 0px 10px 10px;
-    margin-left: 90px;
+    margin-left: 60px;
     margin-top: 68px; }
-  #pageContent .pageContent .region-content h1.the-lady-headings-h1 {
+  #pageContent .pageContent #the-lady-about-page h1.the-lady-headings-h1 {
     margin-top: 80px;
-    margin-left: 153px;
+    margin-left: 80px;
     font-family: "Allura", cursive;
     font-weight: 800;
     color: #0EB2B8;
     font-size: 40px; }
-  #pageContent .pageContent .region-content h1.the-founder-h1 {
+  #pageContent .pageContent #the-lady-about-page h1.the-founder-h1 {
     margin-top: 80px;
     margin-left: 108px;
     font-family: "Allura", cursive;
     font-weight: 800;
     color: #0EB2B8;
     font-size: 40px; }
-  #pageContent .pageContent .region-content p.about-para-intro {
-    margin-left: 160px;
+  #pageContent .pageContent #the-lady-about-page p.about-para-intro {
+    margin-left: 80px;
+    line-height: 28px;
+    margin-right: 50px; }
+  #pageContent .pageContent #the-lady-about-page p.about-para-founder {
+    margin-left: 85px;
     line-height: 28px; }
-  #pageContent .pageContent .region-content p.about-para-founder {
-    margin-left: 111px;
-    line-height: 28px; }
-  #pageContent .pageContent .region-content img.founder-pic {
+  #pageContent .pageContent #the-lady-about-page img.founder-pic {
     margin-left: -42px;
     margin-top: 80px;
     display: inline-block;
@@ -7280,24 +7281,24 @@ footer {
     -o-border-radius: 100%;
     height: 192px;
     width: 200px; }
-  #pageContent .pageContent .region-content ul.social-links {
+  #pageContent .pageContent #the-lady-about-page ul.social-links {
     margin-left: -13px;
     margin-top: 10px;
     list-style-type: none;
     padding: 0px; }
-    #pageContent .pageContent .region-content ul.social-links li {
+    #pageContent .pageContent #the-lady-about-page ul.social-links li {
       display: inline;
       padding: 5px; }
-      #pageContent .pageContent .region-content ul.social-links li a {
+      #pageContent .pageContent #the-lady-about-page ul.social-links li a {
         color: #096d71; }
-        #pageContent .pageContent .region-content ul.social-links li a:hover {
+        #pageContent .pageContent #the-lady-about-page ul.social-links li a:hover {
           color: #070707; }
-  #pageContent .pageContent .region-content h4.the-founder-heading {
+  #pageContent .pageContent #the-lady-about-page h4.the-founder-heading {
     margin-left: -60px;
     font-weight: 800;
     color: #0EB2B8;
     font-family: "Allura", cursive; }
-    #pageContent .pageContent .region-content h4.the-founder-heading a {
+    #pageContent .pageContent #the-lady-about-page h4.the-founder-heading a {
       font-weight: normal; }
-      #pageContent .pageContent .region-content h4.the-founder-heading a:hover {
+      #pageContent .pageContent #the-lady-about-page h4.the-founder-heading a:hover {
         color: #0EB2B8; }
