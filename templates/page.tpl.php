@@ -110,7 +110,6 @@ else {
   <?php } ?>
 
 
-  <!--<div id="the-lady-headlines marquee">jQuery marquee is the best <b>marquee</b> plugin in the world</div> -->
   <?php // Main Content Area ?>
   <div id="content">
 
@@ -127,15 +126,14 @@ else {
 
     <div class="row">
       <?php // Sidebar-first ?>
-      <?php if ($page['sidebar_first']) { ?>
-      <div id="sidebar-first" class="large-3 columns">
-        <?php print render($page['sidebar_first']); ?>
-      </div><!-- #sidebar-first -->
+        <?php if ($page['sidebar_first']) { ?>
+        <div id="sidebar-first" class="large-3 columns">
+          <?php print render($page['sidebar_first']); ?>
+        </div><!-- #sidebar-first -->
       <?php } // endif sidebar-first ?>
 
       <?php // Main page content ?>
       <div id="pageContent" class="<?php print ($contentwidth); ?> columns">
-
         <?php if ($page['highlighted']) { ?>
         <div id="highlighted">
           <?php print render($page['highlighted']); ?>
@@ -143,41 +141,36 @@ else {
         <?php } //endif; highlighted ?>
 
         <?php if (($title) && (!$is_front)) { ?>
-          <?php print render($title_prefix); ?>
-          <?php // dpm($node, 'page template'); ?>
-          <?php
-             if (!(isset($node) && ($node->type == 'property'))) {
-            //   print ff_property_summaryline($node);
-            //}
-            ?>
-            <h1 class="pagetitle"><?php print $title ?></h1>
-            <?php } ?>
-            <?php print render($title_suffix); ?>
+        <?php print render($title_prefix); ?>
+        <?php // dpm($node, 'page template'); ?>
+        <?php
+          if (!(isset($node) && ($node->type == 'property'))) {
+            //  print ff_property_summaryline($node);
+              //}
+        ?>
+        <h1 class="pagetitle"><?php print $title ?></h1>
+        <?php } ?>
+        <?php print render($title_suffix); ?>
         <?php } ?>
         
         <?php // Context allows for section titles and section subtitles ?>
         <?php // I'll use that functionality to render a sub-title for the user registration page ?>
         <?php if (isset($section_subtitle)) { ?>
-        <h2 class="sectionsubtitle"><?php print render($section_subtitle); ?></h2>
+          <h2 class="sectionsubtitle"><?php print render($section_subtitle); ?></h2>
         <?php } ?>
 
         <?php /* Find out if printing a full node by a user and print a different size of the userpic than node teaser */ ?>
-
         <?php if ($page['help']) { ?>
         <div id="drupalhelp">
           <?php print render($page['help']); ?>
         </div><!-- highlighted -->
         <?php } //endif; highlighted ?>
-
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-
-        
 
         <div class="pageContent">
           <?php print render($page['content']); ?>
           <?php print render($page['latest_news_events']); ?>
         </div>
-
       </div><!-- #pageContent -->
 
       <?php // Sidebar-second ?>
@@ -190,6 +183,9 @@ else {
     </div><!-- row -->
   </div><!-- #content -->
   <?php // end Main Content Area ?>
+
+
+
 
   <?php // Polyptych ?>
   <?php if (($page['polyptych_first']) || ($page['polyptych_01']) || ($page['polyptych_02']) || ($page['polyptych_last'])) { ?>
@@ -207,11 +203,13 @@ else {
       <div id="polyptych-last" class="medium-6 large-3 column">
         <?php if ($page['polyptych_last']) { print render($page['polyptych_last']); } else { print '&nbsp;';} ?>
       </div>
-      
     </section>
   </div>
   <?php } ?>
   <?php // end Polyptych ?>
+
+
+
 
   <?php // Footer ?>
   <footer id="the-lady-footer">
@@ -220,33 +218,32 @@ else {
         <?php print render($page['footer_form']); ?>
       </div>
       <div class="large-4 columns footer-social-links">
-          <div class="social-links">
-            <ul>
-              <li><a target="_blank" href="http://www.facebook.com/thelady2015" class="fa fa-facebook-official fa-2x"></a></li>
-              <li><a target="_blank" href="https://twitter.com/TheLady2015" class="fa fa-twitter fa-2x"></a></li>
-            </ul>
-          </div>
+        <div class="social-links">
+          <ul>
+            <li><a target="_blank" href="http://www.facebook.com/thelady2015" class="fa fa-facebook-official fa-2x"></a></li>
+            <li><a target="_blank" href="https://twitter.com/TheLady2015" class="fa fa-twitter fa-2x"></a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <nav class="footer">
-        <div class="inner">
-            <div class="left">
-                <div class="copy"><a href="http://www.thelady.co.za">© THE LADY COPYRIGHT 2015</a></div>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a target="_blank" href="/thelady/home">Home</a></li>
-                    <li><a target="_blank" href="/thelady/about">About</a></li>
-                    <li><a target="_blank" href="/thelady/article-list">The Ladies</a></li>
-                    <li><a target="_blank" href="/thelady/event-list">Events</a></li>
-                    <li><a target="_blank" href="/thelady/sponsor-list">Sponsors</a></li>
-                    <li><a target="_blank" href="/thelady/content/get-touch">Get In Touch</a></li>
-                </ul>
-            </div>
+      <div class="inner">
+        <div class="left">
+          <div class="copy"><a href="http://www.thelady.co.za">© THE LADY COPYRIGHT 2015</a></div>
         </div>
+        <div class="right">
+          <ul>
+            <li><a target="_blank" href="/thelady/home">Home</a></li>
+            <li><a target="_blank" href="/thelady/about">About</a></li>
+            <li><a target="_blank" href="/thelady/article-list">The Ladies</a></li>
+            <li><a target="_blank" href="/thelady/event-list">Events</a></li>
+            <li><a target="_blank" href="/thelady/sponsor-list">Sponsors</a></li>
+            <li><a target="_blank" href="/thelady/content/get-touch">Get In Touch</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
-</footer>
+  </footer>
   <?php // end Footer ?>
 </div>
 

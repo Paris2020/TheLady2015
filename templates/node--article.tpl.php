@@ -96,7 +96,10 @@
 		        </div>
 		        <div class="article-venue">
 		          <?php print render($content['field_article_date']); ?>
-		          <?php print render($content['field_tags']); ?>
+		          	<div class="article-tags">
+		            	<?php $tags = render($content['field-tags']); ?>
+		            	<?php if($tags){ print $tags;}?>
+	          		</div>
 		          <div class="postmeta">
 		          	<?php print render($content['links']); ?>
 		          </div>
@@ -108,21 +111,21 @@
 		elseif($page){
 		?>	
 			<article class="article-node-page">
-        	<h2 class="the-lady-headings-h2"><?php print $title; ?></h2>
-	          <div class="article-image">
-	            <?php print render($content['field_image']); ?>
-	          </div>
-	          <div class="article-body">
-	            <?php print render($content['body']); ?>
+			<div class="right">
+				<h2 class="the-lady-headings-h2"><?php print $title; ?></h2>
+	          	<div class="article-image">
+	            	<?php print render($content['field_image']); ?>
+	          	</div>
+	          	<div class="article-body">
+	            	<?php print render($content['body']); ?>
+				</div>
 			</div>
-	          <div class="article-tags">
-	            <?php $tags = render($content['field-tags']); ?>
-	            <?php 
-	            	if($tags){
-	            		print $tags;
-	            	 }
-	            ?>
-	          </div>
+			<div class="left">
+				<div class="related-posts">
+					<h3>Related Posts</h3>
+					<?php print render($region['sidebar_first']); ?> 
+				</div>
+			</div>
       		</article>
 		<?php
 		}

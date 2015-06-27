@@ -156,11 +156,12 @@
             <div class="event-comments-form">
               <div class="comment-form-wrapper">
                 <div class="right">
-                  <!-- <h2 class="the-lady-comment-h2">Add a comment</h2> -->
                   <?php print render($content['comments']); ?>
                 </div>
                 <div class="left">
-                  <div class="comment-icon"></div>
+                  <div class="comment-icon">
+                    <blockquote class="oval-comments"></blockquote>
+                  </div>
                 </div>
               </div>
             </div>

@@ -4,7 +4,9 @@ core = 7.x
 version = 7.x-1.0
 engine = phptemplate
 screenshot = screenshot.png
-scripts[] = custom.js
+
+;Javascript files
+scripts[] = js/custom.js
 
 ; Override the Foundation defaults and customize
 stylesheets[all][] = css/app.css
@@ -27,6 +29,7 @@ regions[help] = Help
 
 regions[content] = Content
 regions[latest_news_events] = Latest News and Events
+
 
 regions[diptych_first] = Diptych first
 regions[diptych_last] = Diptych last

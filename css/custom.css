@@ -6862,20 +6862,37 @@ footer {
   #pageContent .pageContent .submission-text p.subscribe-msg {
     text-align: center;
     font-size: 20px; }
-  #pageContent .pageContent .article-node-page h2.the-lady-headings-h2 {
-    font-weight: bold;
-    padding-bottom: 5px;
-    margin-left: 24px; }
-  #pageContent .pageContent .article-node-page .article-image .field-name-field-image {
-    margin-bottom: 20px;
-    margin-left: 25px; }
-  #pageContent .pageContent .article-node-page .article-body .field-name-body p.article-desc-para {
-    text-align: justify;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 18px;
-    margin-left: 25px; }
-  #pageContent .pageContent .article-node-page .article-comments h2.the-lady-comment-h2 {
-    margin-left: 25px; }
+  #pageContent .pageContent .article-node-page {
+    margin-top: 60px;
+    padding: 0 0 150px 0; }
+    #pageContent .pageContent .article-node-page .right {
+      float: right;
+      width: 70%; }
+      #pageContent .pageContent .article-node-page .right h2.the-lady-headings-h2 {
+        font-weight: bold;
+        padding-bottom: 5px;
+        font-family: "Allura", cursive;
+        font-size: 35px;
+        color: #58585a;
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0; }
+      #pageContent .pageContent .article-node-page .right .article-image .field-name-field-image {
+        margin-bottom: 20px;
+        margin: 0 0 50px 0;
+        text-align: center; }
+      #pageContent .pageContent .article-node-page .right .article-body .field-name-body p.article-desc-para {
+        text-align: justify;
+        font-family: "Bad Script", cursive;
+        font-size: 18px;
+        padding-left: 25px;
+        padding-right: 25px; }
+    #pageContent .pageContent .article-node-page .left {
+      float: left;
+      width: 30%; }
+      #pageContent .pageContent .article-node-page .left .related-posts {
+        margin: 416px 0 0 0; }
   #pageContent .pageContent .view-event-list {
     text-align: center;
     margin-left: 180px;
@@ -6954,14 +6971,54 @@ footer {
       padding-top: 50px; }
       #pageContent .pageContent .view-sponsor-list .field-name-field-logo img {
         width: 200px;
-        height: 200px; }
+        height: 200px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%; }
     #pageContent .pageContent .view-sponsor-list .field-name-body a {
       font-size: 10px; }
-    #pageContent .pageContent .view-sponsor-list .field-name-body p.sponsor-desc-details {
-      margin-left: 230px;
-      margin-top: -102px;
-      font-family: "Bad Script", cursive;
-      font-size: 18px; }
+    #pageContent .pageContent .view-sponsor-list .field-name-body .bubble {
+      position: relative;
+      width: 640px;
+      height: 165px;
+      padding: 0px;
+      background: #DEDFDA;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: #DEDFDA solid 5px;
+      float: right;
+      margin-top: -215px; }
+      #pageContent .pageContent .view-sponsor-list .field-name-body .bubble:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 13px 26px 13px 0;
+        border-color: transparent #DEDFDA;
+        display: block;
+        width: 0;
+        z-index: 1;
+        left: -26px;
+        top: 82px; }
+      #pageContent .pageContent .view-sponsor-list .field-name-body .bubble:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 17px 30px 17px 0;
+        border-color: transparent #DEDFDA;
+        display: block;
+        width: 0;
+        z-index: 0;
+        left: -35px;
+        top: 78px; }
+      #pageContent .pageContent .view-sponsor-list .field-name-body .bubble p.sponsor-desc-details {
+        margin-left: 55px;
+        margin-top: 25px;
+        font-family: "Bad Script", cursive;
+        font-size: 18px;
+        padding-right: 45px; }
   #pageContent .pageContent .view-front-page-slideshow {
     margin-left: 130px;
     margin-right: 100px;
