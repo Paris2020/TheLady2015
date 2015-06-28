@@ -6,7 +6,7 @@
  * Amazee theme.
  */
 
-//drupal_add_js(drupal_get_path('theme', 'thelady2015') .'/custom.js');
+ drupal_add_js(drupal_get_path('theme', 'thelady2015') .'/js/custom.js');
 
  function thelady2015_preprocess_node(&$variables) {
 

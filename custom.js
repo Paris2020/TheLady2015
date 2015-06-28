@@ -5,7 +5,7 @@
 
       function runEffect() {
       // run the effect
-        $( ".effect", context ).effect('slide', options, 500, callback );
+        $( ".effect", context ).effect('shake', options, 500, callback );
       }
     
       // callback function to 
