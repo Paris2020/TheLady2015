@@ -1,17 +1,36 @@
 //*********** IMPORTS *****************
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var   watch = require('gulp-watch');
+var gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	watch = require('gulp-watch'),
+	browserSync = require('browser-sync'),
+	paths =  {
+		scss: '.sass/*.scss'
+	};
 
+
+//Gulp compling my Sass files into CSS
 gulp.task('sass', function (){
-	return gulp.src('scss/*.scss')
-	.pipe(sass())	//compile them using sass folder
-	.pipe(gulp.dest('css')); //save the css to this destination
+	 gulp.src('scss/*.scss')
+		 .pipe(sass({includePaths: ['scss']}))	
+	 	 .pipe(gulp.dest('css')); //save the css to this destination
 });
 
+//Gulp perfoming my watch task
 gulp.task('watch',function(){
 	gulp.watch('scss/*.scss',['sass']);
-	//gulp.watch('js/*.js');
 });
 
-gulp.task('default',['watch','sass']);
+//Gulp peforming browser-sync task
+gulp.task('browser-sync', function(){
+	browserSync.init(['css/*.css', 'js/*.js'],{
+		proxy: 'http://thelady'
+	});
+});
+
+//Gulp performing watch task
+gulp.task('watch',['sass','browser-sync'], function(){
+	gulp.watch('scss/*.scss', ['sass']);
+});
+
+//Gulp's default task
+gulp.task('default',['watch']);

@@ -1,12 +1,9 @@
-name = The Lady 2015
+name = thelady2015
 description = Drupal Theme using Foundation 5, developed by Nelly Moseki
 core = 7.x
 version = 7.x-1.0
 engine = phptemplate
 screenshot = screenshot.png
-
-;Javascript files
-scripts[] = js/custom.js
 
 ; Override the Foundation defaults and customize
 stylesheets[all][] = css/app.css

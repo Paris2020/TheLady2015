@@ -48,12 +48,12 @@ else {
 
         </div>
 
-        <div class="large-3 columns social-links">
+        <!-- <div class="large-3 columns social-links">
           <ul>
             <li><a target="_blank" href="http://www.facebook.com/thelady2015"  class="fa fa-facebook-official fa-3x"></a></li>
             <li><a target="_blank" href="https://twitter.com/TheLady2015"  class="fa fa-twitter fa-3x"></a></li>
           </ul>
-        </div>
+        </div> -->
 
       </div>
     </div><!-- row -->

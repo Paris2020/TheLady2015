@@ -6448,6 +6448,7 @@ header {
   margin: 0 16px 0px 0; }
 
 #primarymainmenu {
+  margin-top: -103px;
   max-height: 2.8125rem; }
   #primarymainmenu h1 {
     color: #ffffff;
@@ -6731,13 +6732,6 @@ footer {
   background: #FFFFFF;
   box-shadow: black 0px 0px 30px; }
 
-/* JQuery Marquee */
-.marquee {
-  /*width: 300px;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background: #ccc; */ }
-
 /* Region - Sidebar Second */
 #content .submitted {
   display: none; }
@@ -6752,29 +6746,33 @@ footer {
       font-size: 25px;
       font-family: "Open Sans Condensed", sans-serif;
       font-weight: bold;
-      text-align: center;
-      font-family: "Bad Script", cursive; }
+      text-align: center; }
     #content #sidebar-second .region-sidebar-second .content {
       margin-bottom: 50px; }
       #content #sidebar-second .region-sidebar-second .content p {
         font-size: 16px;
         font-weight: normal;
-        text-align: center; }
+        text-align: center;
+        font-family: "Open Sans Condensed", sans-serif; }
         #content #sidebar-second .region-sidebar-second .content p a.get-in-touch-link {
           color: #FFFFFF;
           font-size: 18px;
           font-weight: bold;
           height: 30px;
-          display: inline-block;
           line-height: 30px;
-          padding: 5px 15px 35px 15px;
           cursor: pointer;
-          border-radius: 0px;
+          font-family: "Open Sans Condensed", sans-serif;
           background-color: #0EB2B8;
-          background-size: 100% 40px;
-          font-family: "Open Sans Condensed", sans-serif; }
+          border: 1px solid #0eb2b8;
+          border-radius: 3px;
+          display: inline-block;
+          padding: 10px 20px 40px 20px;
+          text-decoration: none;
+          text-transform: uppercase; }
           #content #sidebar-second .region-sidebar-second .content p a.get-in-touch-link:hover {
-            color: #FFFFFF; }
+            background-color: #58585a;
+            border: 1px solid #58585a;
+            color: #0EB2B8; }
 
 /* Site Logo and Name - has been removed*/
 .site-name-slogan .name h1 {
@@ -6849,7 +6847,7 @@ footer {
 #pageContent .pageContent {
   /* When the node is displayed in full view mode */
   /* View of Events - Events Page */
-  /* Sponsor List View */
+  /* Sponsors Page */
   /* Front Page Slideshow */
   /* Latest News and Events - Frontpage Region and Block */
   /* Custom Event Node Template Full Page View Mode  */
@@ -6922,15 +6920,19 @@ footer {
           margin: 0 0 28px 0px;
           display: block;
           max-width: 420px; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-body .field-name-body {
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-body .field-name-body .event-desc-para {
           margin: 0 0 25px 0;
           font-weight: lighter;
-          font-family: "Bad Script", cursive; }
+          font-size: 18px;
+          font-family: "Open Sans Condensed", sans-serif; }
         #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-venue .field-name-field-event-date {
-          color: #58585a; }
+          color: #58585a;
+          font-family: "Open Sans Condensed", sans-serif;
+          font-size: 18px; }
         #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-venue .field-name-field-venue {
           font-weight: bold;
           color: #58585a;
+          font-family: "Open Sans Condensed", sans-serif;
           padding-bottom: 10px; }
         #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.addtoany {
           display: none; }
@@ -6961,68 +6963,39 @@ footer {
           margin-left: -145px;
           font-family: "Bad Script", cursive;
           color: #58585a; }
-  #pageContent .pageContent .view-sponsor-list {
-    padding-top: 60px;
-    padding-right: 10px; }
-    #pageContent .pageContent .view-sponsor-list h2 {
-      display: none; }
-    #pageContent .pageContent .view-sponsor-list .field-name-field-logo {
-      padding-bottom: 26px;
-      padding-top: 50px; }
-      #pageContent .pageContent .view-sponsor-list .field-name-field-logo img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%; }
-    #pageContent .pageContent .view-sponsor-list .field-name-body a {
-      font-size: 10px; }
-    #pageContent .pageContent .view-sponsor-list .field-name-body .bubble {
-      position: relative;
-      width: 640px;
-      height: 165px;
-      padding: 0px;
-      background: #DEDFDA;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      border: #DEDFDA solid 5px;
-      float: right;
-      margin-top: -215px; }
-      #pageContent .pageContent .view-sponsor-list .field-name-body .bubble:after {
-        content: '';
-        position: absolute;
-        border-style: solid;
-        border-width: 13px 26px 13px 0;
-        border-color: transparent #DEDFDA;
-        display: block;
-        width: 0;
-        z-index: 1;
-        left: -26px;
-        top: 82px; }
-      #pageContent .pageContent .view-sponsor-list .field-name-body .bubble:before {
-        content: '';
-        position: absolute;
-        border-style: solid;
-        border-width: 17px 30px 17px 0;
-        border-color: transparent #DEDFDA;
-        display: block;
-        width: 0;
-        z-index: 0;
-        left: -35px;
-        top: 78px; }
-      #pageContent .pageContent .view-sponsor-list .field-name-body .bubble p.sponsor-desc-details {
-        margin-left: 55px;
-        margin-top: 25px;
-        font-family: "Bad Script", cursive;
-        font-size: 18px;
-        padding-right: 45px; }
+  #pageContent .pageContent #motivate-sponsorhip {
+    text-align: center; }
+    #pageContent .pageContent #motivate-sponsorhip h2.the-lady-headings-h2 {
+      font-size: 50px;
+      font-weight: 800;
+      color: #0EB2B8;
+      font-family: "Allura", cursive; }
+    #pageContent .pageContent #motivate-sponsorhip p.why-sponsor-the-lady {
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 30px; }
+    #pageContent .pageContent #motivate-sponsorhip #get-in-touch a {
+      background-color: #0EB2B8;
+      border: 1px solid #0EB2B8;
+      border-radius: 3px;
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 700;
+      margin-top: 20px;
+      padding: 15px 25px 10px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Allura", cursive; }
+      #pageContent .pageContent #motivate-sponsorhip #get-in-touch a:hover {
+        background-color: #58585a;
+        border: 1px solid #58585a;
+        color: #0EB2B8; }
   #pageContent .pageContent .view-front-page-slideshow {
     margin-left: 130px;
     margin-right: 100px;
-    padding-top: 50px; }
+    padding-top: 10px; }
     #pageContent .pageContent .view-front-page-slideshow .views-field-title {
       position: absolute;
       bottom: 35px;
@@ -7053,53 +7026,53 @@ footer {
       font-weight: bold;
       color: #0EB2B8;
       font-size: 30px; }
-    #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser h2 {
-      font-size: 30px;
-      font-weight: bold;
-      font-family: "Allura", cursive;
-      color: #58585A;
-      text-align: center; }
-    #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-image .field-name-field-event-image {
-      padding-bottom: 20px;
-      text-align: center; }
-    #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue {
-      text-align: center; }
-      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue .field-name-field-event-date {
-        padding-top: 10px;
-        font-family: "Bad Script", cursive;
-        font-size: 18px;
-        padding-bottom: 14px; }
-      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue .field-name-field-venue {
-        font-family: "Bad Script", cursive;
-        font-size: 20px;
-        padding-bottom: 14px;
-        font-weight: bold; }
-      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.addtoany {
-        display: none; }
-      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.node-readmore a {
-        font-family: "Open Sans Condensed", sans-serif;
-        font-size: 20px;
-        color: #FFFFFF;
+    #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser {
+      margin-left: -20px; }
+      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser h2 {
+        font-size: 30px;
         font-weight: bold;
-        height: 40px;
-        display: inline-block;
-        line-height: 30px;
-        padding: 5px 10px;
-        cursor: pointer;
-        border-radius: 0px;
-        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
-        background: #58585A; }
-        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.node-readmore a:hover {
-          color: #0EB2B8; }
-      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.comment-comments {
-        display: none; }
-      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.comment-add {
-        display: none; }
-      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue h4.the-lady-headings-h4 {
-        display: none; }
-    #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser p.event-desc-para {
-      display: none;
-      font-family: "Open Sans Condensed", sans-serif; }
+        font-family: "Allura", cursive;
+        color: #58585A;
+        text-align: center; }
+      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-image .field-name-field-event-image {
+        padding-bottom: 20px;
+        text-align: center; }
+      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue {
+        text-align: center; }
+        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue .field-name-field-event-date {
+          padding-top: 10px;
+          font-size: 18px;
+          padding-bottom: 14px; }
+        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue .field-name-field-venue {
+          font-size: 18px;
+          padding-bottom: 14px;
+          font-weight: bold; }
+        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.addtoany {
+          display: none; }
+        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.node-readmore a {
+          font-family: "Open Sans Condensed", sans-serif;
+          font-size: 20px;
+          color: #FFFFFF;
+          font-weight: bold;
+          height: 40px;
+          display: inline-block;
+          line-height: 30px;
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 0px;
+          box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+          background: #58585A; }
+          #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.node-readmore a:hover {
+            color: #0EB2B8; }
+        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.comment-comments {
+          display: none; }
+        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.comment-add {
+          display: none; }
+        #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue h4.the-lady-headings-h4 {
+          display: none; }
+      #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser p.event-desc-para {
+        display: none;
+        font-family: "Open Sans Condensed", sans-serif; }
   #pageContent .pageContent .event-node-page {
     margin-top: 60px; }
     #pageContent .pageContent .event-node-page h2.the-lady-headings-h2 {
@@ -7208,41 +7181,35 @@ footer {
               color: #0EB2B8; }
   #pageContent .pageContent .view-article-list {
     margin-top: 90px; }
-    #pageContent .pageContent .view-article-list .node-article {
-      padding-left: 60px; }
-      #pageContent .pageContent .view-article-list .node-article .article-node-teaser h2 {
-        font-family: "Allura", cursive;
-        font-weight: bold;
-        font-size: 30px;
-        padding-bottom: 10px;
-        color: #58585a; }
-      #pageContent .pageContent .view-article-list .node-article .article-node-teaser .article-image .field-name-field-image {
-        float: right;
-        margin-right: 60px;
-        margin-bottom: 100px; }
-      #pageContent .pageContent .view-article-list .node-article .article-node-teaser .article-body .field-name-body p {
-        width: 50%;
-        color: #222222;
-        font-family: "Bad Script", cursive;
-        font-size: 18px; }
-      #pageContent .pageContent .view-article-list .node-article .article-node-teaser .article-venue .field-name-field-article-date {
-        margin-bottom: 10px; }
-      #pageContent .pageContent .view-article-list .node-article .article-node-teaser ul.links li.node-readmore a {
-        font-family: "Bad Script", cursive;
-        font-weight: bold;
-        display: inline-block;
-        line-height: 30px;
-        padding: 6px 10px 35px 10px;
-        cursor: pointer;
-        border-radius: 0px;
-        background: url("../images/the_lady_bg.png") no-repeat;
-        background-size: 100% 35px;
+    #pageContent .pageContent .view-article-list .article-node-teaser .article-image .field-name-field-image {
+      width: 100%;
+      overflow: hidden;
+      position: relative; }
+      #pageContent .pageContent .view-article-list .article-node-teaser .article-image .field-name-field-image img {
+        width: 100%;
+        float: left;
+        z-index: 5; }
+    #pageContent .pageContent .view-article-list .article-node-teaser h2.the-lady-headings-h2 {
+      padding: 15px 21px;
+      background: transparent;
+      color: #444444;
+      bottom: 0;
+      overflow: hidden;
+      margin-bottom: 0; }
+    #pageContent .pageContent .view-article-list .article-node-teaser .postmeta .links .node-readmore {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10; }
+      #pageContent .pageContent .view-article-list .article-node-teaser .postmeta .links .node-readmore span {
+        padding: 10px 21px;
+        background-color: #ffc200;
+        position: absolute;
         color: #FFFFFF;
-        font-size: 20px; }
-        #pageContent .pageContent .view-article-list .node-article .article-node-teaser ul.links li.node-readmore a:hover {
-          color: #0EB2B8; }
-      #pageContent .pageContent .view-article-list .node-article .article-node-teaser ul.links li.comment-add {
-        display: none; }
+        bottom: 10px;
+        margin-left: -200px; }
   #pageContent .pageContent #block-entityform-block-get-in-touch {
     padding-top: 105px;
     padding-left: 30px; }
@@ -7255,8 +7222,8 @@ footer {
       color: #0EB2B8;
       font-family: "Allura", cursive; }
     #pageContent .pageContent #block-entityform-block-get-in-touch label {
-      font-size: 24px;
-      font-family: "Allura", cursive;
+      font-size: 20px;
+      font-family: "Open Sans Condensed", sans-serif;
       font-weight: 800; }
     #pageContent .pageContent #block-entityform-block-get-in-touch .field-name-field-name-required- {
       float: left;
@@ -7315,7 +7282,7 @@ footer {
     font-size: 40px; }
   #pageContent .pageContent #the-lady-about-page h1.the-founder-h1 {
     margin-top: 80px;
-    margin-left: 108px;
+    margin-left: 56px;
     font-family: "Allura", cursive;
     font-weight: 800;
     color: #0EB2B8;
@@ -7323,10 +7290,13 @@ footer {
   #pageContent .pageContent #the-lady-about-page p.about-para-intro {
     margin-left: 80px;
     line-height: 28px;
-    margin-right: 50px; }
+    margin-right: 50x;
+    padding-right: 100px;
+    font-family: "Open Sans Condensed", sans-serif; }
   #pageContent .pageContent #the-lady-about-page p.about-para-founder {
-    margin-left: 85px;
-    line-height: 28px; }
+    margin-left: 60px;
+    line-height: 28px;
+    font-family: "Open Sans Condensed", sans-serif; }
   #pageContent .pageContent #the-lady-about-page img.founder-pic {
     margin-left: -42px;
     margin-top: 80px;
