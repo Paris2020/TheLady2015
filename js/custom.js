@@ -1,17 +1,9 @@
-// Drupal.behaviors.runfunctions = {
-//     attach: function (context){
-//     alert('hello world');
-// }
-
 (function ($) {
-  Drupal.behaviors.hello = {
+  Drupal.behaviors.fadein = {
     attach: function (context, settings) {
-      //$('.about-para-intro').css('color','red');
+
+      $(".effect").slideDown();
     }
   };
-
-
 })(jQuery);
-
-//Gives you info about the page - Context
-//
+//Context - Gives you info about the page

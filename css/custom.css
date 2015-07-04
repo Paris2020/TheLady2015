@@ -6944,15 +6944,20 @@ footer {
           float: right;
           position: static; }
           #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore a {
-            background: url("../images/the_lady_bg.png") no-repeat;
-            background-size: 100% 35px;
             color: #FFFFFF;
             font-size: 20px;
             font-weight: bold;
             padding-left: 5px;
-            padding-right: 5px; }
+            padding-right: 5px;
+            font-family: "Open Sans Condensed", sans-serif;
+            background-color: #0EB2B8;
+            border: 1px solid #0EB2B8;
+            border-radius: 3px;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase; }
             #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore a:hover {
-              color: #0EB2B8; }
+              color: #58585a; }
         #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.comment-comments {
           display: none; }
         #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.comment-add {
@@ -6961,7 +6966,6 @@ footer {
           margin-top: 16px;
           margin-bottom: -50px;
           margin-left: -145px;
-          font-family: "Bad Script", cursive;
           color: #58585a; }
   #pageContent .pageContent #motivate-sponsorhip {
     text-align: center; }
@@ -7059,7 +7063,7 @@ footer {
           line-height: 30px;
           padding: 5px 10px;
           cursor: pointer;
-          border-radius: 0px;
+          border-radius: 3px;
           box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
           background: #58585A; }
           #pageContent .pageContent .region-latest-news-events #block-views-latest-news-events-block .view-latest-news-events .node-events .event-node-teaser .event-venue ul.links li.node-readmore a:hover {

@@ -717,19 +717,19 @@ footer {
     }
     .pageContent{
 
-
       //Submission Text
       .submission-text{
          h1.the-lady-headings-h1{
           text-align: center;
           font-size: 60px;
+          font-family: $h1_headers;
+          color: $primary-color;
         }
         p.subscribe-msg {
           text-align: center;
           font-size: 20px;
         }
       }
-     
 
 
     /* When the node is displayed in full view mode */
@@ -849,15 +849,20 @@ footer {
                 float: right;
                 position: static;
                 a{
-                  background: url("../images/the_lady_bg.png") no-repeat;
-                  background-size: 100% 35px;
                   color: $white;
                   font-size: 20px;
                   font-weight: bold;
                   padding-left: 5px;
                   padding-right: 5px;
+                  font-family: $font-family-sans-serif;
+                  background-color: $primary-color;
+                  border: 1px solid $primary-color;
+                  border-radius: 3px;
+                  display: inline-block;
+                  text-decoration: none;
+                  text-transform: uppercase;
                   &:hover{
-                    color: $primary-color;
+                    color: $good_grey;
                   }
                 }
               }
@@ -872,7 +877,6 @@ footer {
               margin-top: 16px;
               margin-bottom: -50px;
               margin-left: -145px;
-              font-family: $paragraph-font-family;
               color: $good_grey;
             }
           }
@@ -1005,14 +1009,14 @@ footer {
                     a{
                       font-family: $h2_headers;
                       font-size: 20px;
-                      color: #FFFFFF;
+                      color: $white;
                       font-weight: bold;
                       height: 40px;
                       display: inline-block;
                       line-height: 30px;
                       padding: 5px 10px;
                       cursor: pointer;
-                      border-radius: 0px;
+                      border-radius: 3px;
                       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
                       background: #58585A;
                       &:hover{
