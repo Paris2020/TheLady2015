@@ -6424,7 +6424,9 @@ body {
 header {
   color: #222222;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: url("../images/header_2.jpg");
+  background-size: 100% 300px; }
   header h1 {
     display: block;
     float: left;
@@ -6448,7 +6450,7 @@ header {
   margin: 0 16px 0px 0; }
 
 #primarymainmenu {
-  margin-top: -103px;
+  margin-top: -45px;
   max-height: 2.8125rem; }
   #primarymainmenu h1 {
     color: #ffffff;
@@ -6856,7 +6858,9 @@ footer {
   /* Panels - About Page */ }
   #pageContent .pageContent .submission-text h1.the-lady-headings-h1 {
     text-align: center;
-    font-size: 60px; }
+    font-size: 60px;
+    font-family: "Allura", cursive;
+    color: #0EB2B8; }
   #pageContent .pageContent .submission-text p.subscribe-msg {
     text-align: center;
     font-size: 20px; }

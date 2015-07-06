@@ -131,7 +131,8 @@ header {
   color: $header-font-color;
   margin: 0;
   padding: 0;
-//  padding: $margin-default 0;
+  background: url("../images/header_2.jpg");
+  background-size: 100% 300px;
   h1 {
     display: block;
     float: left;
@@ -160,7 +161,7 @@ header {
 }
 
 #primarymainmenu {
-  margin-top: -103px;
+  margin-top: -45px;
   max-height: $topbar-height;
   h1 {
     color: $negative;
