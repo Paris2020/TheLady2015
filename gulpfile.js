@@ -15,11 +15,6 @@ gulp.task('sass', function (){
 	 	 .pipe(gulp.dest('css')); //save the css to this destination
 });
 
-//Gulp perfoming my watch task
-gulp.task('watch',function(){
-	gulp.watch('scss/*.scss',['sass']);
-});
-
 //Gulp peforming browser-sync task
 gulp.task('browser-sync', function(){
 	browserSync.init(['css/*.css', 'js/*.js'],{

@@ -80,6 +80,7 @@
  * @ingroup themeable
  */
 ?>
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 	<div class="content"<?php print $content_attributes; ?>>
 		<?php 
@@ -91,16 +92,6 @@
 		          <?php print render($content['field_image']); ?>
 		        </div>
 		        <h2 class="the-lady-headings-h2"><?php print $title; ?></h2>
-		        
-		        
-		         <div class="article-tags">
-		            <?php $tags = render($content['field-tags']); ?>
-		            <?php if($tags){ print $tags;}?>
-	          	</div>
-		        <div class="postmeta">
-		          	<?php print render($content['links']); ?>
-		          	<span>READ MORE</span>
-		        </div>
       		</article>
 		<?php
 			print render($title_prefix);

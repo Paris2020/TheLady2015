@@ -6848,14 +6848,14 @@ footer {
 
 #pageContent .pageContent {
   /* When the node is displayed in full view mode */
-  /* View of Events - Events Page */
   /* Sponsors Page */
   /* Front Page Slideshow */
   /* Latest News and Events - Frontpage Region and Block */
   /* Custom Event Node Template Full Page View Mode  */
-  /* Article List View - The Ladies Page */
+  /* View of Events - Events Page */
   /* Entity Form Block */
-  /* Panels - About Page */ }
+  /* Panels - About Page */
+  /* Custom Node Article -  THE LADIES PAGE */ }
   #pageContent .pageContent .submission-text h1.the-lady-headings-h1 {
     text-align: center;
     font-size: 60px;
@@ -6895,84 +6895,9 @@ footer {
       width: 30%; }
       #pageContent .pageContent .article-node-page .left .related-posts {
         margin: 416px 0 0 0; }
-  #pageContent .pageContent .view-event-list {
-    text-align: center;
-    margin-left: 180px;
-    margin-top: 80px; }
-    #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row {
-      width: 100%;
-      max-width: 460px;
-      padding: 0 20px 40px 0;
-      height: auto;
-      float: left; }
-      #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser {
-        border-color: #58585a;
-        border-top: 5px solid;
-        background-color: #F8FAED;
-        padding: 30px 35px 90px;
-        font-size: 18px;
-        position: relative; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser h2.the-lady-headings-h2 {
-          margin: 10px 0 40px;
-          font-size: 30px;
-          line-height: 5px;
-          font-weight: bold;
-          color: #0EB2B8;
-          font-family: "Allura", cursive; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-image .field-name-field-event-image {
-          width: 100%;
-          margin: 0 0 28px 0px;
-          display: block;
-          max-width: 420px; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-body .field-name-body .event-desc-para {
-          margin: 0 0 25px 0;
-          font-weight: lighter;
-          font-size: 18px;
-          font-family: "Open Sans Condensed", sans-serif; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-venue .field-name-field-event-date {
-          color: #58585a;
-          font-family: "Open Sans Condensed", sans-serif;
-          font-size: 18px; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-venue .field-name-field-venue {
-          font-weight: bold;
-          color: #58585a;
-          font-family: "Open Sans Condensed", sans-serif;
-          padding-bottom: 10px; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.addtoany {
-          display: none; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore {
-          display: inline-block;
-          line-height: 2.5rem;
-          padding: 15px 11px 0;
-          text-decoration: none;
-          float: right;
-          position: static; }
-          #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore a {
-            color: #FFFFFF;
-            font-size: 20px;
-            font-weight: bold;
-            padding-left: 5px;
-            padding-right: 5px;
-            font-family: "Open Sans Condensed", sans-serif;
-            background-color: #0EB2B8;
-            border: 1px solid #0EB2B8;
-            border-radius: 3px;
-            display: inline-block;
-            text-decoration: none;
-            text-transform: uppercase; }
-            #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore a:hover {
-              color: #58585a; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.comment-comments {
-          display: none; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.comment-add {
-          display: none; }
-        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser h4.the-lady-headings-h4 {
-          margin-top: 16px;
-          margin-bottom: -50px;
-          margin-left: -145px;
-          color: #58585a; }
   #pageContent .pageContent #motivate-sponsorhip {
-    text-align: center; }
+    text-align: center;
+    margin-top: 45px; }
     #pageContent .pageContent #motivate-sponsorhip h2.the-lady-headings-h2 {
       font-size: 50px;
       font-weight: 800;
@@ -6992,14 +6917,13 @@ footer {
       font-size: 25px;
       font-weight: 700;
       margin-top: 20px;
-      padding: 15px 25px 10px 20px;
+      padding: 15px 20px 15px 20px;
       text-decoration: none;
       text-transform: uppercase;
-      font-family: "Allura", cursive; }
+      font-family: "Open Sans Condensed", sans-serif; }
       #pageContent .pageContent #motivate-sponsorhip #get-in-touch a:hover {
         background-color: #58585a;
-        border: 1px solid #58585a;
-        color: #0EB2B8; }
+        border: 1px solid #58585a; }
   #pageContent .pageContent .view-front-page-slideshow {
     margin-left: 130px;
     margin-right: 100px;
@@ -7119,7 +7043,7 @@ footer {
     #pageContent .pageContent .event-node-page .event-body .field-name-body p.event-desc-para {
       text-align: justify;
       padding: 25px;
-      font-family: "Bad Script", cursive;
+      font-family: "Open Sans Condensed", sans-serif;
       font-size: 18px;
       margin-top: 30px; }
     #pageContent .pageContent .event-node-page section.comment-wrapper {
@@ -7187,37 +7111,82 @@ footer {
               background-color: #58585A;
               border: 1px solid #58585A;
               color: #0EB2B8; }
-  #pageContent .pageContent .view-article-list {
-    margin-top: 90px; }
-    #pageContent .pageContent .view-article-list .article-node-teaser .article-image .field-name-field-image {
+  #pageContent .pageContent .view-event-list {
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 80px; }
+    #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row {
       width: 100%;
-      overflow: hidden;
-      position: relative; }
-      #pageContent .pageContent .view-article-list .article-node-teaser .article-image .field-name-field-image img {
-        width: 100%;
-        float: left;
-        z-index: 5; }
-    #pageContent .pageContent .view-article-list .article-node-teaser h2.the-lady-headings-h2 {
-      padding: 15px 21px;
-      background: transparent;
-      color: #444444;
-      bottom: 0;
-      overflow: hidden;
-      margin-bottom: 0; }
-    #pageContent .pageContent .view-article-list .article-node-teaser .postmeta .links .node-readmore {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 10; }
-      #pageContent .pageContent .view-article-list .article-node-teaser .postmeta .links .node-readmore span {
-        padding: 10px 21px;
-        background-color: #ffc200;
-        position: absolute;
-        color: #FFFFFF;
-        bottom: 10px;
-        margin-left: -200px; }
+      max-width: 460px;
+      padding: 0 20px 40px 0;
+      height: auto;
+      float: left; }
+      #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser {
+        border-color: #58585a;
+        border-top: 5px solid;
+        background-color: #F8FAED;
+        padding: 30px 35px 90px;
+        font-size: 18px;
+        position: relative; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser h2.the-lady-headings-h2 {
+          margin: 10px 0 40px;
+          font-size: 30px;
+          line-height: 5px;
+          font-weight: bold;
+          color: #0EB2B8;
+          font-family: "Allura", cursive; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-image .field-name-field-event-image {
+          width: 100%;
+          margin: 0 0 28px 0px;
+          display: block;
+          max-width: 420px; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-body .field-name-body .event-desc-para {
+          margin: 0 0 25px 0;
+          font-weight: lighter;
+          font-size: 18px;
+          font-family: "Open Sans Condensed", sans-serif; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-venue .field-name-field-event-date {
+          color: #58585a;
+          font-family: "Open Sans Condensed", sans-serif;
+          font-size: 18px; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser .event-venue .field-name-field-venue {
+          font-weight: bold;
+          color: #58585a;
+          font-family: "Open Sans Condensed", sans-serif;
+          padding-bottom: 10px; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.addtoany {
+          display: none; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore {
+          display: inline-block;
+          line-height: 2.5rem;
+          padding: 15px 11px 0;
+          text-decoration: none;
+          float: right;
+          position: static; }
+          #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore a {
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-family: "Open Sans Condensed", sans-serif;
+            background-color: #0EB2B8;
+            border: 1px solid #0EB2B8;
+            border-radius: 3px;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase; }
+            #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.node-readmore a:hover {
+              color: #58585a; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.comment-comments {
+          display: none; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser ul.links li.comment-add {
+          display: none; }
+        #pageContent .pageContent .view-event-list ul.large-block-grid-2 .views-row .event-node-teaser h4.the-lady-headings-h4 {
+          margin-top: 16px;
+          margin-bottom: -50px;
+          margin-left: -145px;
+          color: #58585a; }
   #pageContent .pageContent #block-entityform-block-get-in-touch {
     padding-top: 105px;
     padding-left: 30px; }
@@ -7265,8 +7234,7 @@ footer {
       margin-top: 20px;
       padding: 12px 20px;
       text-decoration: none;
-      text-transform: uppercase;
-      font-family: "Allura", cursive; }
+      text-transform: uppercase; }
       #pageContent .pageContent #block-entityform-block-get-in-touch .entitytype-get_in_touch-form input[type="submit"]:hover {
         background-color: #58585A;
         border: 1px solid #58585A;
@@ -7337,3 +7305,18 @@ footer {
       font-weight: normal; }
       #pageContent .pageContent #the-lady-about-page h4.the-founder-heading a:hover {
         color: #0EB2B8; }
+  #pageContent .pageContent .view-article-list {
+    margin-top: 90px; }
+    #pageContent .pageContent .view-article-list .article-node-teaser {
+      padding: 10px 13px 30px;
+      margin-left: 40px;
+      margin-right: 55px;
+      margin-top: 60px; }
+      #pageContent .pageContent .view-article-list .article-node-teaser .field-name-field-image {
+        text-align: center; }
+      #pageContent .pageContent .view-article-list .article-node-teaser h2.the-lady-headings-h2 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 10px;
+        color: #58585a; }
